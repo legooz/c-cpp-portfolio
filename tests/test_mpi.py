@@ -23,6 +23,7 @@ def launch(ranks, args, expected=None):
     assert result.returncode == 0, result.stdout + result.stderr
     values = re.search(r"serial_min=(-?\d+) parallel_min=(-?\d+)", result.stdout)
     assert values and tuple(map(int, values.groups())) == (expected, expected), result.stdout
+    return result.stdout
 
 
 checks = 0
@@ -47,5 +48,19 @@ for ranks in [1, 3, 8]:
     checks += 1
 for args in [[0], [-1], ["abc"], ["--values"], ["--values", "2147483648"], [10, 1, 2]]:
     launch(2, args)
+    checks += 1
+
+# Exercise the actual eight-million-element broadcast specified by the handout.
+for seed, args in [(42, []), (7, ["--assignment", "7"])]:
+    state = seed
+    expected = 1000000001
+    for _ in range(8000000):
+        state = (state * 1664525 + 1013904223) & 0xffffffff
+        expected = min(expected, state % 1000000001)
+    output = launch(8, args, expected)
+    assert "mode=assignment-broadcast count=8000000 ranks=8" in output, output
+    checks += 1
+for ranks, args in [(2, []), (8, ["--assignment", "bad-seed"])]:
+    launch(ranks, args)
     checks += 1
 print(f"Passed {checks} MPI scenarios.")

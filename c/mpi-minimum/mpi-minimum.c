@@ -20,9 +20,13 @@ int main(int argc, char **argv) {
     int rank, ranks;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &ranks);
-    int count = 100003, seed = 42, valid = 1;
+    int count = 8000000, seed = 42, valid = 1;
+    const int assignment = argc == 1 || strcmp(argv[1], "--assignment") == 0;
     const int explicit_values = argc > 1 && strcmp(argv[1], "--values") == 0;
-    if (explicit_values) count = argc - 2;
+    if (assignment) {
+        if (ranks != 8 || argc > 3) valid = 0;
+        if (argc == 3 && !parse_int(argv[2], &seed)) valid = 0;
+    } else if (explicit_values) count = argc - 2;
     else {
         if (argc > 3) valid = 0;
         if (argc > 1 && !parse_int(argv[1], &count)) valid = 0;
@@ -42,9 +46,9 @@ int main(int argc, char **argv) {
                 if (!parse_int(argv[i + 2], &array[i])) { valid = 0; break; }
             } else {
                 state = state * UINT32_C(1664525) + UINT32_C(1013904223);
-                array[i] = (int)(state % UINT32_C(2000001)) - 1000000;
+                array[i] = assignment ? (int)(state % UINT32_C(1000000001))
+                                      : (int)(state % UINT32_C(2000001)) - 1000000;
             }
-            if (array[i] < serial_min) serial_min = array[i];
         }
         int offset = 0;
         for (int r = 0; r < ranks; ++r) {
@@ -55,25 +59,40 @@ int main(int argc, char **argv) {
     }
     MPI_Bcast(&valid, 1, MPI_INT, 0, MPI_COMM_WORLD);
     if (!valid) {
-        if (rank == 0) fputs("Usage: mpi_minimum [size (1..10000000) [seed]] | --values INT...\n", stderr);
+        if (rank == 0) fputs("Usage: mpi_minimum [--assignment [seed]] (8 ranks required) | size (1..10000000) [seed] | --values INT...\n", stderr);
         free(array); free(counts); free(offsets);
         MPI_Finalize();
         return 1;
     }
     const int local_count = count / ranks + (rank < count % ranks);
-    int *local = malloc((size_t)(local_count > 0 ? local_count : 1) * sizeof(*local));
-    if (!local) { fputs("Local allocation failed.\n", stderr); MPI_Abort(MPI_COMM_WORLD, 1); }
-    MPI_Scatterv(array, counts, offsets, MPI_INT, local, local_count, MPI_INT, 0, MPI_COMM_WORLD);
+    int *local;
+    if (assignment) {
+        /* The original handout explicitly requires broadcasting the entire array. */
+        if (rank != 0) array = malloc((size_t)count * sizeof(*array));
+        if (!array) { fputs("Broadcast allocation failed.\n", stderr); MPI_Abort(MPI_COMM_WORLD, 1); }
+        MPI_Bcast(array, count, MPI_INT, 0, MPI_COMM_WORLD);
+        local = array + rank * local_count;
+    } else {
+        /* Generalized portfolio mode also supports uneven and empty partitions. */
+        local = malloc((size_t)(local_count > 0 ? local_count : 1) * sizeof(*local));
+        if (!local) { fputs("Local allocation failed.\n", stderr); MPI_Abort(MPI_COMM_WORLD, 1); }
+        MPI_Scatterv(array, counts, offsets, MPI_INT, local, local_count, MPI_INT, 0, MPI_COMM_WORLD);
+    }
     int local_min = INT_MAX, parallel_min;
     for (int i = 0; i < local_count; ++i) if (local[i] < local_min) local_min = local[i];
     MPI_Reduce(&local_min, &parallel_min, 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
     int result = 0;
     if (rank == 0) {
-        printf("count=%d ranks=%d serial_min=%d parallel_min=%d\n", count, ranks, serial_min, parallel_min);
+        /* Validate independently by scanning the complete array after reduction. */
+        for (int i = 0; i < count; ++i)
+            if (array[i] < serial_min) serial_min = array[i];
+        printf("mode=%s count=%d ranks=%d serial_min=%d parallel_min=%d\n",
+               assignment ? "assignment-broadcast" : "general-scatter", count, ranks, serial_min, parallel_min);
         result = parallel_min != serial_min;
     }
     MPI_Bcast(&result, 1, MPI_INT, 0, MPI_COMM_WORLD);
-    free(local); free(array); free(counts); free(offsets);
+    if (!assignment) free(local);
+    free(array); free(counts); free(offsets);
     MPI_Finalize();
     return result;
 }

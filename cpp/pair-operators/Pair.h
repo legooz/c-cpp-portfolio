@@ -1,4 +1,6 @@
 #pragma once
+// A member operator+ requires a Pair as its left operand; int has no such member.
+// Non-member friend operators allow 2 + pair, pair + 2, and pair + pair.
 class Pair
 {
 private:

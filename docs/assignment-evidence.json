@@ -1,0 +1,174 @@
+{
+  "review_date": "2026-09-24",
+  "notes": "Hashes identify privately retained original files. Documents, student details, and local filesystem paths are not republished. Reference notebooks are not independent grading rubrics.",
+  "evidence": [
+    {
+      "id": "E00",
+      "filename": "211_Assignment_3 (1).docx",
+      "sha256": "5968754e28d261c21cad66a6322ba756b5044471d30296df581ca644d5ffe0da",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "pair_operators",
+        "zipcode_codec",
+        "movie_sort",
+        "leading_digits",
+        "maze_class"
+      ]
+    },
+    {
+      "id": "E01",
+      "filename": "CSCE_A211_lab_14.docx",
+      "sha256": "0795ff7905eee8c2ec69993befb5aa70741e7a37cb7c0e074457029e66475b5d",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "hamming_distance"
+      ]
+    },
+    {
+      "id": "E03",
+      "filename": "assignment_3(1).docx",
+      "sha256": "19b6e09eda374909cf5a06571c736f3846e9cbdd5334c107aa141f2a6bd85bd0",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "mpi_minimum"
+      ]
+    },
+    {
+      "id": "E06",
+      "filename": "Tutorial 4 (1).pptx",
+      "sha256": "a5fede5e06c9c6cfeac74d7734cab770aeb13009ad6470f804de06883b5ab956",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "process_info"
+      ]
+    },
+    {
+      "id": "E08",
+      "filename": "Tutorial 8.pptx",
+      "sha256": "1e6e6671e7eb424d9b8a95a27fb54447684db005d60c7d1749fce959d0d958b4",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "bankers"
+      ]
+    },
+    {
+      "id": "E10",
+      "filename": "211_Lab_04.docx",
+      "sha256": "0d5b712a1034617d6b353ab9770a355c9b3477636eb5d9864cf0f77f45d03ec1",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "selection_sort"
+      ]
+    },
+    {
+      "id": "E11",
+      "filename": "211_Lab_05.docx",
+      "sha256": "322b51f337efc65aef44601e80556b7c70661dc9fc5961b3ab6ba036b07b0c5e",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "vowel_runs"
+      ]
+    },
+    {
+      "id": "E12",
+      "filename": "CSCE_A211__Lab_06.docx",
+      "sha256": "fe5216278ceb3d70b7ece7790f290f243e0d5c5496fbe8f7f405bdd41cde0449",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "recursive_sorted",
+        "command_product"
+      ]
+    },
+    {
+      "id": "E13",
+      "filename": "Binary_Trees.ipynb",
+      "sha256": "e74cda2b026329c6a35e90972bae3cdae36f8c1220a64ec5b49ce4047a49f468",
+      "kind": "reference notebook",
+      "programs": [
+        "binary_trees"
+      ]
+    },
+    {
+      "id": "E18",
+      "filename": "CSCE_A311_Homework2.ipynb",
+      "sha256": "1e940665002211109634c4b73e2e1167aeb5d96f9f8d544224e57989046d2470",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "playlist"
+      ]
+    },
+    {
+      "id": "E26",
+      "filename": "Insertion_Sort.ipynb",
+      "sha256": "60b51e189070d57caa3d28a729773ed395e4090680d7b3cbf478b20f6d8440fb",
+      "kind": "reference notebook",
+      "programs": [
+        "insertion_sort"
+      ]
+    },
+    {
+      "id": "E27",
+      "filename": "Linked_Lists.ipynb",
+      "sha256": "0da1c670e1b8b905182674061e080b96ecc383965d0c8c0735e4142230284a4e",
+      "kind": "reference notebook",
+      "programs": [
+        "linked_list_basics"
+      ]
+    },
+    {
+      "id": "E28",
+      "filename": "Linked_Lists_Operation.ipynb",
+      "sha256": "d774859f6372700af95e6385c2eabf38bc4388da79ea3ca3be56ad97f0c34a59",
+      "kind": "reference notebook",
+      "programs": [
+        "linked_list_operations"
+      ]
+    },
+    {
+      "id": "E31",
+      "filename": "Priority_Queues.ipynb",
+      "sha256": "1a24540ce0b0cc13bdca18463ba7e4668cbe55467d6ea190967f965de5436c5f",
+      "kind": "reference notebook",
+      "programs": [
+        "priority_queues"
+      ]
+    },
+    {
+      "id": "E35",
+      "filename": "Queue.ipynb",
+      "sha256": "3c454bb0343488d8d84e4be955632800226d1bb217e95c595967a6d59fa4f7de",
+      "kind": "reference notebook",
+      "programs": [
+        "queues"
+      ]
+    },
+    {
+      "id": "E37",
+      "filename": "TreeTraversal.ipynb",
+      "sha256": "2bb00960b48d695f7674ffeb5235f2164fe8489e0478ba9540e2cf97f53f78f2",
+      "kind": "reference notebook",
+      "programs": [
+        "tree_traversal"
+      ]
+    },
+    {
+      "id": "E40",
+      "filename": "Tutorial 7.pptx",
+      "sha256": "e4a6fc0a62c1ab49f354fe8861b38f6bac7d391ed52a3259434e8c413c54c871",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "threads_with_semaphore",
+        "threads_without_semaphore"
+      ]
+    },
+    {
+      "id": "E41",
+      "filename": "211_Assignment_1.docx",
+      "sha256": "b1d4c0f8fcfb95d9c448669627252bc0ff6eefb2a0efc54e65b3e808bffa6a5e",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "leading_digits"
+      ]
+    }
+  ]
+}

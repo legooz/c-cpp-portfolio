@@ -1,3 +1,4 @@
+#include <type_traits>
 #include <algorithm>
 #include <array>
 #include <climits>
@@ -22,6 +23,14 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 #undef main
 
 int main() {
+    static_assert(std::is_same_v<decltype(&consecVowels), int (*)(const char*)>);
+    char word[word_capacity];
+    std::istringstream input("abstemious zombies");
+    CHECK(readWord(input, word) && std::strcmp(word, "abstemious") == 0);
+    CHECK(readWord(input, word) && std::strcmp(word, "zombies") == 0);
+    CHECK(!readWord(input, word));
+    std::istringstream oversized("abcdefghijklmn");
+    expectThrow<std::length_error>([&] { readWord(oversized, word); });
 
     CHECK(consecVowels("") == 0); CHECK(consecVowels("rhythm") == 0);
     CHECK(consecVowels("AEIOU") == 5); CHECK(consecVowels("queueing") == 5);

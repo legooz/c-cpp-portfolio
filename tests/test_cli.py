@@ -66,6 +66,8 @@ class Programs(unittest.TestCase):
         self.assertIsNotNone(parent)
         self.assertIsNotNone(child)
         self.assertEqual(parent.groups(), tuple(reversed(child.groups())))
+        self.assertIn(f"process_info({parent.group(1)})", output)
+        self.assertIn(f"pstree({child.group(1)})", output)
         run("process_info", "/bin/sh", "-c", "exit 7", code=7)
         run("process_info", "/this-command-does-not-exist", code=127)
         run("process_info", "/bin/sh", "-c", "kill -TERM $$", code=143)
@@ -94,6 +96,10 @@ class Programs(unittest.TestCase):
             self.assertIn("1: 0", run("leading_digits", path))
             path.write_text("AEIOU\ncat\nboat\n")
             self.assertEqual(run("vowel_runs", path), "AEIOU (5 consecutive vowels)\n")
+            path.write_text("abcdefghijklm\n")
+            self.assertIn("abcdefghijklm", run("vowel_runs", path))
+            path.write_text("abcdefghijklmn\n")
+            run("vowel_runs", path, code=1)
             path.write_text("")
             run("vowel_runs", path, code=1)
             run("vowel_runs", Path(tmp) / "missing", code=1)
@@ -104,6 +110,29 @@ class Programs(unittest.TestCase):
         self.assertIn("abc is not a palindrome.", run("palindrome", data="abc n\n"))
         self.assertIn("is a palindrome.", run("palindrome", data="x" * 10000 + " n\n"))
         run("palindrome", code=1)
+
+    def test_command_product(self):
+        self.assertEqual(run("command_product", 2, 4, 6), "48\n")
+        self.assertEqual(run("command_product", -2, 4, -6), "48\n")
+        self.assertEqual(run("command_product", "+2", 4), "8\n")
+        self.assertEqual(run("command_product", *([1] * 100)), "1\n")
+        self.assertEqual(run("command_product", -9223372036854775808, 1), "-9223372036854775808\n")
+        self.assertEqual(run("command_product", -9223372036854775808, -1, -1), "-9223372036854775808\n")
+        self.assertEqual(run("command_product", 9223372036854775807, 2, 0), "0\n")
+        for args in [[], ["abc"], ["+-2"], ["+"], ["1.2"], ["9223372036854775808"],
+                     ["9223372036854775807", "2"], ["-9223372036854775808", "-1"]]:
+            run("command_product", *args, code=1)
+
+    def test_bankers_request(self):
+        data = "7 5 3 0 3 2 2 0 9 0 2 0 2 2 2 0 4 3 3 0 " \
+               "0 1 0 0 2 0 0 0 3 0 2 0 2 1 1 0 0 0 2 0 3 3 2 0"
+        self.assertIn("GRANTED", run("bankers", "--request", 2, 1, 0, 2, 0, data=data))
+        self.assertIn("unsafe tentative state", run("bankers", "--request", 5, 3, 3, 0, 0, data=data))
+        self.assertIn("exceeds remaining claim", run("bankers", "--request", 2, 2, 0, 0, 0, data=data))
+        self.assertIn("resources unavailable", run("bankers", "--request", 1, 7, 0, 0, 0, data=data))
+        run("bankers", "--request", 0, 0, 0, 0, 0, data=data, code=1)
+        run("bankers", "--request", 1, -1, 0, 0, 0, data=data, code=1)
+        run("bankers", "--request", 1, 0, 0, 0, data=data, code=1)
 
     def test_hamming_input(self):
         self.assertIn("Hamming distance: 32", run("hamming_distance", data="0 4294967295"))

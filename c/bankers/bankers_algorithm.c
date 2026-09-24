@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 enum { PROCESSES = 5, RESOURCES = 4 };
 typedef struct {
@@ -45,6 +46,42 @@ int bankers_safe(const BankerState *state, int sequence[PROCESSES]) {
     return completed == PROCESSES;
 }
 
+enum RequestResult {
+    REQUEST_INVALID = -3, REQUEST_EXCEEDS_CLAIM = -2, REQUEST_UNAVAILABLE = -1,
+    REQUEST_UNSAFE = 0, REQUEST_GRANTED = 1
+};
+
+/* Tutorial 8 also describes the resource-request algorithm. A denied request
+   leaves the original state unchanged, including after the tentative safety test. */
+enum RequestResult bankers_request(BankerState *state, int process,
+                                  const int request[RESOURCES], int sequence[PROCESSES]) {
+    if (process < 0 || process >= PROCESSES || bankers_safe(state, sequence) < 0)
+        return REQUEST_INVALID;
+    for (int j = 0; j < RESOURCES; ++j) if (request[j] < 0) return REQUEST_INVALID;
+    for (int j = 0; j < RESOURCES; ++j)
+        if (request[j] > state->claim[process][j] - state->allocation[process][j])
+            return REQUEST_EXCEEDS_CLAIM;
+    for (int j = 0; j < RESOURCES; ++j)
+        if (request[j] > state->available[j]) return REQUEST_UNAVAILABLE;
+    BankerState trial = *state;
+    for (int j = 0; j < RESOURCES; ++j) {
+        trial.available[j] -= request[j];
+        trial.allocation[process][j] += request[j];
+    }
+    if (bankers_safe(&trial, sequence) != 1) return REQUEST_UNSAFE;
+    *state = trial;
+    return REQUEST_GRANTED;
+}
+
+static bool parse_nonnegative(const char *token, int *value) {
+    errno = 0;
+    char *end;
+    long parsed = strtol(token, &end, 10);
+    if (errno || end == token || *end || parsed < 0 || parsed > INT_MAX) return false;
+    *value = (int)parsed;
+    return true;
+}
+
 static bool read_nonnegative(int *value) {
     char token[64];
     size_t length = 0;
@@ -57,17 +94,22 @@ static bool read_nonnegative(int *value) {
         ch = getchar();
     } while (ch != EOF && !isspace((unsigned char)ch));
     token[length] = '\0';
-    errno = 0;
-    char *end;
-    long parsed = strtol(token, &end, 10);
-    if (errno || *end || parsed < 0 || parsed > INT_MAX) return false;
-    *value = (int)parsed;
-    return true;
+    return parse_nonnegative(token, value);
 }
 
-int main(void) {
+int main(int argc, char **argv) {
     BankerState state;
     int sequence[PROCESSES];
+    int process = 0, request[RESOURCES] = {0};
+    if (argc != 1) {
+        if (argc != 7 || strcmp(argv[1], "--request") != 0 ||
+            !parse_nonnegative(argv[2], &process) || process < 1 || process > PROCESSES) {
+            fputs("Usage: bankers [--request PROCESS(1..5) R1 R2 R3 R4]\n", stderr);
+            return 1;
+        }
+        for (int j = 0; j < RESOURCES; ++j)
+            if (!parse_nonnegative(argv[j + 3], &request[j])) goto invalid;
+    }
     /* Input: 20 claims, 20 allocations, then 4 available counts, row-major. */
     for (int i = 0; i < PROCESSES; ++i)
         for (int j = 0; j < RESOURCES; ++j)
@@ -81,6 +123,18 @@ int main(void) {
     while ((ch = getchar()) != EOF) if (!isspace((unsigned char)ch)) goto invalid;
     int safe = bankers_safe(&state, sequence);
     if (safe < 0) goto invalid;
+    if (argc != 1) {
+        enum RequestResult result = bankers_request(&state, process - 1, request, sequence);
+        if (result == REQUEST_INVALID) goto invalid;
+        if (result != REQUEST_GRANTED) {
+            const char *reason = result == REQUEST_EXCEEDS_CLAIM ? "exceeds remaining claim" :
+                                 result == REQUEST_UNAVAILABLE ? "resources unavailable" : "unsafe tentative state";
+            printf("DENIED: %s.\n", reason);
+            return 0;
+        }
+        puts("GRANTED: resources allocated safely.");
+        safe = 1;
+    }
     if (safe) {
         printf("SAFE sequence:");
         for (int i = 0; i < PROCESSES; ++i) printf(" P%d", sequence[i] + 1);

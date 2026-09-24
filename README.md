@@ -4,18 +4,18 @@
 
 **Lars Goozen · C11 · C++17 · Linux / WSL**
 
-A collection of 27 small programs developed from 2023–2025 coursework and reviewed in September 2026. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. Each program builds independently through one CMake project.
+A collection of 28 small programs: 27 recovered from 2023–2025 coursework, plus a missing lab exercise implemented during the September 2026 review. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. Each program builds independently through one CMake project.
 
-The 2026 review corrected algorithm and memory-safety defects, extracted C++ from eight notebooks, and added repeatable tests and CI. These are educational exercises, with course scaffolding where applicable. The review and test infrastructure were developed with AI assistance; this repository does not present the refreshed code as untouched historical submissions. See [the review record](docs/REVIEW.md) and [attribution](NOTICE.md).
+The 2026 review corrected algorithm and memory-safety defects, extracted C++ from eight notebooks, and added repeatable tests and CI. These are educational exercises, with course scaffolding where applicable. The review and test infrastructure were developed with AI assistance; this repository does not present the refreshed code as untouched historical submissions. Recovered assignment handouts also informed the corrections; see [the assignment audit](docs/ASSIGNMENT_AUDIT.md), [review record](docs/REVIEW.md), and [attribution](NOTICE.md).
 
 ## Start here
 
 | Example | What to inspect | Evidence |
 |---|---|---|
-| [MPI minimum reduction](c/mpi-minimum/mpi-minimum.c) | Uneven `MPI_Scatterv` partitions, empty ranks, `INT_MAX` identity, separate serial reference | 20 MPI scenarios, including negative values, integer limits, non-divisible sizes, and more ranks than values |
-| [Banker's safety algorithm](c/bankers/bankers_algorithm.c) | Resource invariants, safe sequences, validated input, wide accumulation | 60 generated states checked against exhaustive process-order search, plus invalid input and integer limits |
+| [MPI minimum reduction](c/mpi-minimum/mpi-minimum.c) | Required eight-rank broadcast plus generalized `MPI_Scatterv` partitions, `INT_MAX` identity, separate serial scan | 24 MPI scenarios, including two full eight-million-value runs, uneven partitions and integer limits |
+| [Banker's algorithm](c/bankers/bankers_algorithm.c) | Safety checks, tentative resource requests, rollback on denial, validated input | 60 generated states checked against exhaustive process-order search, plus grant/denial/state-preservation tests |
 | [Maze search](cpp/maze-search/maze.hpp) and [class interface](cpp/maze-class/Maze.h) | Depth-first search, backtracking, owned state, bounded coordinates, full paths | Independent BFS reachability checks on 200 generated mazes and a 210-cell path regression |
-| [ZIP barcode codec](cpp/zipcode-codec/zipcode.cpp) | Validated 2-of-5 encoding and decoding, repeatable calls, leading zeros | Exhaustive round trips for all 100,000 five-digit values and malformed barcode tests |
+| [ZIP barcode codec](cpp/zipcode-codec/zipcode.cpp) | One stored representation, required integer/string getters, private codec helpers, leading zeros | Exhaustive round trips for all 100,000 five-digit values and malformed barcode tests |
 | [Playlist](cpp/playlist/PlaylistManagementSystem.cpp) | Linked-list reversal, append, shuffle, ownership and cleanup | Empty-list cases, exact ordering, permutation checks, and leak detection |
 
 The smaller examples are indexed in [PROJECTS.md](docs/PROJECTS.md), including their executable names, inputs, assumptions, and regression coverage.
@@ -26,7 +26,7 @@ On Ubuntu / Ubuntu under WSL:
 
 ```sh
 sudo apt-get update
-sudo apt-get install -y build-essential cmake python3 libopenmpi-dev openmpi-bin
+sudo apt-get install -y build-essential cmake python3 libopenmpi-dev openmpi-bin psmisc
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build --parallel
 ctest --test-dir build --output-on-failure
@@ -58,6 +58,11 @@ GCC/Clang builds treat `-Wall -Wextra -Wpedantic` warnings as errors. CI runs no
 ```sh
 # Safe resource allocation: 20 claims, 20 allocations, 4 available counts.
 ./build/bankers < examples/bankers-safe.txt
+# Request four resource counts for process 2; grant only if safe.
+./build/bankers --request 2 1 0 2 0 < examples/bankers-safe.txt
+
+# Original MPI assignment: eight million values broadcast to eight ranks.
+mpirun -n 8 ./build/mpi_minimum --assignment 42
 
 # Uneven distribution across three MPI ranks; the minimum is -100.
 mpirun -n 3 ./build/mpi_minimum --values 10 9 8 7 -100
@@ -68,12 +73,16 @@ mpirun -n 4 ./build/mpi_minimum 100003 42
 ./build/maze_search
 ./build/zipcode_codec
 ./build/playlist
+./build/command_product 2 4 6
 ./build/leading_digits examples/numbers.txt
 ./build/vowel_runs examples/words.txt
 printf '0 4294967295\n' | ./build/hamming_distance
 printf 'racecar n\n' | ./build/palindrome
 
-# Fork, run a child command, wait, and propagate its exit status.
+# Required process-tree demonstration (pstree comes from psmisc).
+./build/process_info
+
+# Optional child command; wait and propagate its exit status.
 ./build/process_info /bin/echo 'Hello from the child'
 ./build/threads_with_semaphore
 ```

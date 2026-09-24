@@ -23,5 +23,4 @@ int main()
   for (int i = 0; i < 6; i++)
      cout << a[i] << endl;
   return 0;
-    return 0;
 }

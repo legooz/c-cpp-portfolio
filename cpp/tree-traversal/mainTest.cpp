@@ -51,5 +51,4 @@ int main()
   postOrder(&root); cout << endl;
 
   return 0;
-    return 0;
 }

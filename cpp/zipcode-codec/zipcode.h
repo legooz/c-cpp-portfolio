@@ -1,16 +1,16 @@
 #pragma once
 #include <string>
 
-// Teaching format: frame bars and five 2-of-5 digits; no postal checksum.
+// Assignment format: frame bars plus five 2-of-5 digits; no checksum.
 class zipcode {
 public:
     zipcode() = default;
     explicit zipcode(int value);
     explicit zipcode(const std::string& barcode);
-    std::string getZipCode(const std::string& barcode) const;
-    std::string getBarCode(int value) const;
-    std::string getZipCode() const;
+    int getZipCode() const;
     std::string getBarCode() const;
 private:
-    int value_ = 0;
+    static int decode(const std::string& barcode);
+    static std::string encode(int value);
+    int value_ = 0; // Only one stored representation, as required.
 };

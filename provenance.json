@@ -47,7 +47,7 @@
       "destination": "cpp/pair-operators/Pair.h",
       "extracted_text_sha256": "9649ef95335e08befb65bca4d1d7485ed9cab2a0d6d9b6105cf4b7c55616908f",
       "source_file_sha256": "aaf6f7b6d2216c842f63849e0199bd769befbd5879ac03320a6c910e8f63f6c1",
-      "published_sha256": "7bea3b1daa26bac759aca8c7c4d66973a034a2802da0b73d3511d03192dc93ef"
+      "published_sha256": "aa6ebdd7d796ed2019382d27b6641f28d84c6f0b43eee6989599f553559ba7ca"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem2/main.cpp",
@@ -55,7 +55,7 @@
       "destination": "cpp/zipcode-codec/main.cpp",
       "extracted_text_sha256": "849d8fc00c178c31564de51de30d9ac27714df92c3550c4a71163c2bcaa84dab",
       "source_file_sha256": "8596f17bb3b92cebc805c99de2a8d46e2529aeceb7f32423458facbc3ac75d95",
-      "published_sha256": "ad6afb2caea652874b50f7b209fe7805b77504eb0a966d2c69cd40c6009c6cf8"
+      "published_sha256": "67cedbc7c722ad1eefefcc3ce97afc34eb49d0e74c4e8155174638fd28ba705e"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem2/zipcode.cpp",
@@ -63,7 +63,7 @@
       "destination": "cpp/zipcode-codec/zipcode.cpp",
       "extracted_text_sha256": "abe104bc0491c641bc638594f807285d9d2e3ba6f7b231fc2dfc27d56fa7359c",
       "source_file_sha256": "0ce0b2e4944ab4b8373316851809006ee471bb35ecb9323026870e99fda17cd2",
-      "published_sha256": "d75427a227d0a8f05ef679c2c29a48c8165e7bceedbea90a0a518ce614f8e40e"
+      "published_sha256": "9b46102878374cfbef64e82faade45b54cb43e9587fe477f634f137a39559880"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem2/zipcode.h",
@@ -71,7 +71,7 @@
       "destination": "cpp/zipcode-codec/zipcode.h",
       "extracted_text_sha256": "02a17565db971e2ba187275e008329a4225252f496a8f520a3a71cc988c3d1df",
       "source_file_sha256": "e4c37e795f9f9f3dc3dcf655eabe5772ed326f398dfb86df7610347f881a5e6e",
-      "published_sha256": "820a4f93170e0bb1f8a9fe3d3ac6eeea33ff2bee9760e4c3bb411c8bfca5ea85"
+      "published_sha256": "a00adfc8f4b255e3531c57a648f59b729f1a5798e3c5ec9ffd22cb5b0459a68b"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem3/Main.cpp",
@@ -103,7 +103,7 @@
       "destination": "cpp/leading-digits/Source.cpp",
       "extracted_text_sha256": "83e09a02ad7ec2cae6b3c42d6e515bd4c84ecb35a143351f79db647b5049b71c",
       "source_file_sha256": "83e09a02ad7ec2cae6b3c42d6e515bd4c84ecb35a143351f79db647b5049b71c",
-      "published_sha256": "2ade04db11674dabbf791e4af88a54e237729cd7ae0e51332314dfd30b13625a"
+      "published_sha256": "886aac2118a9eed2eadefecc386da7386e47b820b6d7e008dacf6a868512206e"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem5/Main.cpp",
@@ -135,7 +135,7 @@
       "destination": "cpp/selection-sort/lab4.cpp",
       "extracted_text_sha256": "f29334db5c3a087b3ecf6ef7b74056d77a4337eeadb0246110053ff949151ec6",
       "source_file_sha256": "0b1bcdf5d9486185d1c098d505305c2e3218fedae93a2676f7159b88dd94b639",
-      "published_sha256": "a0e0c40cccc9aa0acb71bc692403d62c874548d73d9ebe8cbe239e3b179b0039"
+      "published_sha256": "b7687e6d3866585222857cc5cd34e8681591f8b81d4af3a68e28a2b980d1a844"
     },
     {
       "source": "2023/spring/programming-ii/lab05/Source.cpp",
@@ -143,7 +143,7 @@
       "destination": "cpp/vowel-runs/Source.cpp",
       "extracted_text_sha256": "30545913a7e4b07679f9c22297779bd83a8775869c745e72814a9e0a2cd5323a",
       "source_file_sha256": "163893934e1a8694b228586731eeb911b948ab14b4f4daa6e856c592da3f87bb",
-      "published_sha256": "013c19c7144e694fe06aa6f2fb730f2f42ecf16375569cbd0c55e94581cf534a"
+      "published_sha256": "a68677939041b1115386dbd494a64f6c541a13f6e43688747846edd98619b965"
     },
     {
       "source": "2023/spring/programming-ii/lab06/lab06.cpp",
@@ -167,7 +167,7 @@
       "destination": "cpp/opengl-shapes/goozen_lab09.cpp",
       "extracted_text_sha256": "03fa631e3b5df566af979ab7d1d4684b36ff85ae32bffc39fa229ccdf0d2afaa",
       "source_file_sha256": "93aa2739feb8b698e7105c7eb405cf8b87ffc4e68f5bb16a4e229c94b63a7056",
-      "published_sha256": "53f35097ac0285ede8926fad11fd8a53cedd87ff8d8c52f65654445770ff377d"
+      "published_sha256": "5d8a897eb1ca00af7b7a426a466646f716cd677340447b7b55415c6d2eea1d4b"
     },
     {
       "source": "2023/spring/programming-ii/lab14/goozen_lab14.cpp",
@@ -183,7 +183,7 @@
       "destination": "c/bankers/bankers_algorithm.c",
       "extracted_text_sha256": "c9a81db556ec97a7dfc8a66f09eb55a9398df0dd4406418a7de40913f7f0e21b",
       "source_file_sha256": "71f0d29a77e23d875bd974ca04852d627c31cd82aa188f3a3836c927b53a56be",
-      "published_sha256": "40001a589ab0059b69d775e602cd5db18b5ed66f8ba2899871b5b367d72f1b6a"
+      "published_sha256": "8d18157925172060d728f47034c60e59566ec1b9745352933c2637aa454c16d9"
     },
     {
       "source": "2025/spring/operating-systems/process_info.c",
@@ -191,7 +191,7 @@
       "destination": "c/posix/process_info.c",
       "extracted_text_sha256": "972781ab1f789a727459e18d8bca72a9ba33183f099af7b20f1207fe58640cb2",
       "source_file_sha256": "4ed3011e7c66bb43f64fdbf4988f0da9e04b64f79ab88c857a51c192449fee39",
-      "published_sha256": "676dcec6e3da5257989f41ce52fc06ca93924ad2c2db23f5eb8881a7dd1cb8bf"
+      "published_sha256": "6f42cd1abd357ef7660012fcc9ae0287aa4e1de5007db6656f1d4c236fcb85b4"
     },
     {
       "source": "2025/spring/operating-systems/thread_output_without_semaphore.c",
@@ -215,7 +215,7 @@
       "destination": "c/mpi-minimum/mpi-minimum.c",
       "extracted_text_sha256": "6f915479d78a50e921129e89974df1826234c8cf487174ffe23ffdaa58c2d286",
       "source_file_sha256": "6f915479d78a50e921129e89974df1826234c8cf487174ffe23ffdaa58c2d286",
-      "published_sha256": "3dc6cc7d329902e2f940c5b40fa7f8ac30a37ed792301feeaed23db2fe522f05"
+      "published_sha256": "62e7306c8373303daac2c43307febeee4d07c954899e833a9177f9772f78830f"
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/binary-trees.ipynb",
@@ -239,7 +239,7 @@
       "destination": "cpp/binary-trees/main.cpp",
       "extracted_text_sha256": "af5501092a4161996885840122a3487f8e2f4db8956a2e0d1777d5255798d362",
       "source_file_sha256": "a29aa049e728862c1f9c21c5511104a917346b6b828166df15c2bac998f81953",
-      "published_sha256": "d07976f14c9ed6c85bf3bd16bda334cbcb336be6606fa050e968510ca3d0088f"
+      "published_sha256": "172b3937134e8b7bbe7dfc19d983d3372094581a6f1121da4cdd13fc906ecad0"
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/homework2.ipynb",
@@ -255,7 +255,7 @@
       "destination": "cpp/insertion-sort/insertion.cpp",
       "extracted_text_sha256": "3b34f2820fa41373214040040d7b08efc6f373eac8e4013fa6c06e087544181b",
       "source_file_sha256": "7b8e639456bd3fcacb80a5fb90f30ed73c0d96a33ecb85cd94ffc08ff86bc040",
-      "published_sha256": "b50144c6297cc2c4fd6e070d1ea1b77f268a7019502599d51d465265e15f43cc"
+      "published_sha256": "8811101cf819d46d9f1ca160d54f7103776316a90d54a8f728d2ed81363f9ea5"
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/linked-list-basics.ipynb",
@@ -287,7 +287,7 @@
       "destination": "cpp/priority-queues/personQueue.cpp",
       "extracted_text_sha256": "bb08491419f419dfed8ebe2d606ea39b4f29f3de4cac39733010c8834f8d2cc4",
       "source_file_sha256": "d2b120daf8470a10a931553dcae287e8a1fb029e48f74df0dc76ec725cc052d4",
-      "published_sha256": "c7d0c648e95357b10beb15b6595ac2d1b75d384b3e9e73b9f1b62574a61defa4"
+      "published_sha256": "306a502f308c737516d6b246b91dc5841d7404b7b5534f4006dab8cf015bbee7"
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/queues.ipynb",
@@ -311,7 +311,7 @@
       "destination": "cpp/queues/queueMain.cpp",
       "extracted_text_sha256": "ed94070b7a4446ad303c6592f2c5f79999708cdd5e49cf6640c128cf41c8660b",
       "source_file_sha256": "dd22e1e9afe8ad3986cc46228fa5953274db38165f241cab75a5f4cc591d1020",
-      "published_sha256": "a711cc0407f90da5b75819b390cf30dd9e364378560c32f805f679da9a63c2bf"
+      "published_sha256": "eaaeb9de51177c1f6d7407eea47885d7d54c374ba39b11e66bdccf6146ef4b0a"
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/tree-traversal.ipynb",
@@ -319,7 +319,7 @@
       "destination": "cpp/tree-traversal/mainTest.cpp",
       "extracted_text_sha256": "36b7381931ad8f304ac83dbd46b34810b9e6bafeb67ba39176dae853e99b4dc0",
       "source_file_sha256": "51f76800a19d18c89753bd702f5081aa89886e5a4990914fa015a763c46e8464",
-      "published_sha256": "ca7dbadf78c702a2525011d5c5669f0af3d0ede952f7ef6512212b8060b9928f"
+      "published_sha256": "3677df5ce49456eff1b611c51dd6be9a9e3d8745fc75041318e4514af63f182f"
     }
   ],
   "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based."

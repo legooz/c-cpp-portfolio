@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
       - name: Install build dependencies
-        run: sudo apt-get update && sudo apt-get install -y cmake libopenmpi-dev openmpi-bin freeglut3-dev xvfb
+        run: sudo apt-get update && sudo apt-get install -y cmake libopenmpi-dev openmpi-bin freeglut3-dev xvfb psmisc
       - name: Configure
         run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DENABLE_SANITIZERS=${{ matrix.sanitizers }} -DBUILD_OPENGL=ON
       - name: Build with warnings as errors
