@@ -108,8 +108,24 @@ class Programs(unittest.TestCase):
     def test_palindrome_input(self):
         self.assertIn("racecar is a palindrome.", run("palindrome", data="racecar n\n"))
         self.assertIn("abc is not a palindrome.", run("palindrome", data="abc n\n"))
-        self.assertIn("is a palindrome.", run("palindrome", data="x" * 10000 + " n\n"))
+        self.assertIn("is a palindrome.", run("palindrome", data="x" * 14 + " n\n"))
+        self.assertIn("is a palindrome.", run("palindrome", data="racecar"))
+        output = run("palindrome", data="abba y abc n\n")
+        self.assertIn("abba is a palindrome", output)
+        self.assertIn("abc is not a palindrome", output)
+        for length in [15, 10000]:
+            run("palindrome", data="x" * length + " n\n", code=1)
         run("palindrome", code=1)
+
+    def test_maze_assignment_cli(self):
+        for program in ["maze_search", "maze_class", "maze_generation"]:
+            self.assertEqual(run(program, 42), run(program, 42))
+            self.assertNotEqual(run(program, 42), run(program, 43))
+            for args in [["bad"], [-1], ["4294967296"], [1, 2]]:
+                run(program, *args, code=1)
+        rows = run("maze_generation", 42).splitlines()
+        self.assertEqual(len(rows), 40)
+        self.assertTrue(all(len(row) == 40 for row in rows))
 
     def test_command_product(self):
         self.assertEqual(run("command_product", 2, 4, 6), "48\n")
@@ -145,20 +161,25 @@ class Programs(unittest.TestCase):
         self.assertIn("110100101000101011000010011", run("zipcode_codec"))
         self.assertEqual(run("insertion_sort").split(), ["2", "3", "5", "7", "8", "10"])
         self.assertEqual(run("recursive_sorted").split(), ["1", "0"])
+        self.assertEqual(run("pointer_increment").split(), ["0", "1"])
         self.assertIn("First Node: 10\nSecond Node: 8", run("linked_list_basics"))
         self.assertIn("20 10", run("linked_list_operations"))
         self.assertEqual(run("queues").split(), ["Bill", "Aaron", "Zorro", "Gobu"])
         self.assertTrue(run("priority_queues").startswith("CEO 1000\n"))
         self.assertIn("5 10 15", run("binary_trees"))
         self.assertEqual(run("tree_traversal").splitlines(), ["5 3 2 5 7 8 ", "2 3 5 5 7 8 ", "2 5 3 8 7 5 "])
-        self.assertIn("491: Attack at dawn!!", run("word_cipher"))
+        cipher_lines = run("word_cipher").splitlines()
+        self.assertEqual(len(cipher_lines), 500)
+        self.assertTrue(cipher_lines[0].startswith("1: "))
+        self.assertTrue(cipher_lines[-1].startswith("500: "))
+        self.assertIn("491: Attack at dawn!!", cipher_lines)
         self.assertIn("Shuffled Playlist:", run("playlist"))
         run("selection_sort")
         output = run("movie_sort").split("After sorting")[1]
         names = [line.split(", ")[0] for line in output.splitlines() if ", " in line]
         self.assertEqual(names, sorted(names))
         self.assertEqual(len(names), 6)
-        self.assertEqual(len(run("maze_generation").splitlines()), 41)
+        self.assertEqual(len(run("maze_generation").splitlines()), 40)
         run("maze_search")
         run("maze_class")
 

@@ -4,7 +4,7 @@
 
 **Lars Goozen · C11 · C++17 · Linux / WSL**
 
-A collection of 28 small programs: 27 recovered from 2023–2025 coursework, plus a missing lab exercise implemented during the September 2026 review. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. Each program builds independently through one CMake project.
+A collection of 29 small programs: 28 recovered from 2023–2025 coursework (including a commented-out pointer exercise), plus a missing lab exercise implemented during the September 2026 review. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. Each program builds independently through one CMake project.
 
 The 2026 review corrected algorithm and memory-safety defects, extracted C++ from eight notebooks, and added repeatable tests and CI. These are educational exercises, with course scaffolding where applicable. The review and test infrastructure were developed with AI assistance; this repository does not present the refreshed code as untouched historical submissions. Recovered assignment handouts also informed the corrections; see [the assignment audit](docs/ASSIGNMENT_AUDIT.md), [review record](docs/REVIEW.md), and [attribution](NOTICE.md).
 
@@ -34,7 +34,7 @@ ctest --test-dir build --output-on-failure
 
 MPI is enabled by default. For the core examples without MPI, configure with `-DBUILD_MPI=OFF`. POSIX process and thread programs require a Unix-like system; the verified platform is Ubuntu Linux under WSL.
 
-To include the optional OpenGL demo and its two-pixel rendering check:
+To include the optional OpenGL demo and its four-pixel rendering check:
 
 ```sh
 sudo apt-get install -y freeglut3-dev xvfb
@@ -71,6 +71,8 @@ mpirun -n 3 ./build/mpi_minimum --values 10 9 8 7 -100
 mpirun -n 4 ./build/mpi_minimum 100003 42
 
 ./build/maze_search
+./build/maze_generation 42
+./build/pointer_increment
 ./build/zipcode_codec
 ./build/playlist
 ./build/command_product 2 4 6
@@ -87,7 +89,7 @@ printf 'racecar n\n' | ./build/palindrome
 ./build/threads_with_semaphore
 ```
 
-Maze demos use seed 42 for repeatability. Random wall placement can legitimately produce an unsolvable maze; the solver reports that outcome. The separate recursive-division generator produces connected open cells. Neither solver promises a shortest path. The ZIP exercise uses a simplified format without a postal checksum; the word cipher is a classroom byte-manipulation exercise.
+Maze demos choose a fresh random seed by default. Pass an unsigned seed, such as `42`, to any maze executable for repeatable output. Random wall placement can legitimately produce an unsolvable maze; the solver reports that outcome. The separate recursive-division generator produces connected open cells. Neither solver promises a shortest path. The ZIP exercise uses a simplified format without a postal checksum; the word cipher is a classroom byte-manipulation exercise.
 
 ## Provenance
 

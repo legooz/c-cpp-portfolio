@@ -7,7 +7,7 @@
       "destination": "cpp/maze-search/main.cpp",
       "extracted_text_sha256": "14892a6f877ef27ee49f6218a48a8f3219816410be7f3bb48dec530d012065f4",
       "source_file_sha256": "56581cc96ad76bb94ba53feec23a44a65f0cf16197821b059299e56c5123488a",
-      "published_sha256": "c59153821a5cc09f890dafade6758c82dd73c43b440cb74037bf6dd9b1b80ae8"
+      "published_sha256": "da24d067ad3bc806af417e34c334ff6a3654d0303be5526eecbb6de67d628824"
     },
     {
       "source": "2023/spring/programming-ii/assignment2-problem3/main.cpp",
@@ -15,7 +15,7 @@
       "destination": "cpp/maze-generation/main.cpp",
       "extracted_text_sha256": "bffec91276fcd9194331c34a70538a67e579545e7b1314ac9b67babc690ebd66",
       "source_file_sha256": "afdd078a147b945d3612a582fbc8a90cfb62c84757b18bf5fb53845b2662fea9",
-      "published_sha256": "7409caf37ba671dc73467892ab80780a000931b5208b7c77263015da56817d87"
+      "published_sha256": "e15278c7d7eb15c85a46fb08d3bdc03f0515019a3f239a6ea913c4d3b75be626"
     },
     {
       "source": "2023/spring/programming-ii/assignment2-problem4/main.cpp",
@@ -23,7 +23,7 @@
       "destination": "cpp/word-cipher/main.cpp",
       "extracted_text_sha256": "af63e38e2d89e5537ebf8b811b98aa08dd83171e4109e3e62312a84f051830e3",
       "source_file_sha256": "68be5db31a706f5bafbd2607cd30d661f8fd82152fcf4bb87dfb0a79ce8cf119",
-      "published_sha256": "041924014e189cbd49e8474132efd8cf2e9accba1488c55ee7a72ec0decc3ab2"
+      "published_sha256": "a2922d7a27c6894a82c7d0d06cb62e0daea9de6c07f37404827a209548b21d6d"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem1/Main.cpp",
@@ -111,7 +111,7 @@
       "destination": "cpp/maze-class/Main.cpp",
       "extracted_text_sha256": "b12f9356cf0fe2819209f90431228b9d819c93a084e604001f8a05dac2d4cccb",
       "source_file_sha256": "e43a065cda6c4e5dcbcabc7d4afcab22daec1799fd4b163fdcc716ea216d2cce",
-      "published_sha256": "957aecd3cd30f29d526581b82268f8fcf8b09fcb9d26970ab44ac8a85352611b"
+      "published_sha256": "f471eb32845380a1955624f5c253c78e0b4f82a2497890bd171c9afd8bdb4674"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem5/Maze.cpp",
@@ -119,7 +119,7 @@
       "destination": "cpp/maze-class/Maze.cpp",
       "extracted_text_sha256": "df33372e670f6b8b8a2638603e8e79da906766c7f66bd92fa5f0f74980ba2966",
       "source_file_sha256": "366f176db83f2cd5beed49f9bf99285ef66a2488428ac1266f927701c96bff14",
-      "published_sha256": "d68d3a55694093317fe6e1e1ba2607c4d32561a7fba9d7271ccb93e381f723e0"
+      "published_sha256": "b24b7e4f97823823d538bfb61eb9e512e98c67af12298961e72668abfcdc93c6"
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem5/Maze.h",
@@ -127,7 +127,7 @@
       "destination": "cpp/maze-class/Maze.h",
       "extracted_text_sha256": "51d0c9fbf53c9c2aff0b8a006cbb1a61823378dde5e563d955edb57da0bfb0ef",
       "source_file_sha256": "4b24409dfadd18d3406c543b2a19a15e73f2a6ba8f6e37e49206a7c5798c278a",
-      "published_sha256": "22a5d607734f30bf1472c0341ad1fbde83a472962bf37319a7f6c97b7113b195"
+      "published_sha256": "b116ec4320e5ce59a6e39bf94692a2d0f2d7536e19c9e05465e5c266639aef49"
     },
     {
       "source": "2023/spring/programming-ii/lab04/lab4.cpp",
@@ -159,7 +159,7 @@
       "destination": "cpp/palindrome/lab07.cpp",
       "extracted_text_sha256": "85b80705ca08b4cccc9adf8e6e1cd2c122508e72bcf4e579836319b8ec03b725",
       "source_file_sha256": "cf122316f62ccda9beafd1f0e89b2e2b22ff02334ae3ac288c4493149a1ca924",
-      "published_sha256": "3e3551912def108e5f323d65668971b50cf4996e2873cff4273c61523cc6bd98"
+      "published_sha256": "5097aeeb030cead5bb9c21c94d8ff15bd92fcbfd085b8cdda7ba71b212a5a52f"
     },
     {
       "source": "2023/spring/programming-ii/lab09-opengl/goozen_lab09.cpp",
@@ -167,7 +167,7 @@
       "destination": "cpp/opengl-shapes/goozen_lab09.cpp",
       "extracted_text_sha256": "03fa631e3b5df566af979ab7d1d4684b36ff85ae32bffc39fa229ccdf0d2afaa",
       "source_file_sha256": "93aa2739feb8b698e7105c7eb405cf8b87ffc4e68f5bb16a4e229c94b63a7056",
-      "published_sha256": "5d8a897eb1ca00af7b7a426a466646f716cd677340447b7b55415c6d2eea1d4b"
+      "published_sha256": "392bbd65be2463d19e128c97b992cd555311b30549337dd47f607b7bce84551c"
     },
     {
       "source": "2023/spring/programming-ii/lab14/goozen_lab14.cpp",
@@ -320,6 +320,15 @@
       "extracted_text_sha256": "36b7381931ad8f304ac83dbd46b34810b9e6bafeb67ba39176dae853e99b4dc0",
       "source_file_sha256": "51f76800a19d18c89753bd702f5081aa89886e5a4990914fa015a763c46e8464",
       "published_sha256": "3677df5ce49456eff1b611c51dd6be9a9e3d8745fc75041318e4514af63f182f"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab07/lab07.cpp",
+      "cell": null,
+      "source_region": "Initial commented-out Lab 7 part 1 program",
+      "destination": "cpp/palindrome/pointer_increment.cpp",
+      "extracted_text_sha256": "3a1e05d4dc62399c7f1ff782e8c13e476876513efb7556b837f9fda7bf566243",
+      "source_file_sha256": "cf122316f62ccda9beafd1f0e89b2e2b22ff02334ae3ac288c4493149a1ca924",
+      "published_sha256": "374cb2342cf8987dc73ae2b3cc0cb1d66853684ac638d25087ae5287ddf5c04d"
     }
   ],
   "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based."

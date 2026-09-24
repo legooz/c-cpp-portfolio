@@ -1,6 +1,6 @@
 # Program index
 
-All paths below are relative to the repository root. Executables appear in the CMake build directory. C programs use C11; C++ programs use C++17.
+All paths below are relative to the repository root. Executables appear in the CMake build directory. All maze demos accept an optional unsigned seed and otherwise use a fresh seed. C programs use C11; C++ programs use C++17.
 
 ## C programs (5)
 
@@ -12,13 +12,13 @@ All paths below are relative to the repository root. Executables appear in the C
 | `threads_without_semaphore` | [thread source](../c/posix/thread_output_without_semaphore.c) | Same workload without a message-level semaphore. POSIX stdio protects each character call; whole messages can interleave. Tests check character conservation, not a particular schedule. |
 | `mpi_minimum` | [c/mpi-minimum](../c/mpi-minimum) | No arguments or `--assignment [seed]` requires eight ranks and broadcasts 8,000,000 generated values in 0..1,000,000,000. Extension modes: `size [seed]` or `--values INT...`, using `MPI_Scatterv` with any positive rank count. Size 1..10,000,000; integers and seed must fit `int`. Distributes all elements, reduces local minima, and checks a separately computed serial result. Empty overall inputs are rejected; empty rank partitions are supported. No benchmark claim. |
 
-## C++ programs (23)
+## C++ programs (24)
 
 | Executable | Source | Behavior and tests |
 |---|---|---|
 | `maze_search` | [maze-search](../cpp/maze-search) | Recursive DFS through a 20x20 grid with `X` walls and `E` exit. A vector retains the complete path including its exit. Bounds, unreachable exits, long paths and BFS reachability are tested. |
 | `maze_class` | [maze-class](../cpp/maze-class) | Encapsulates grid/start state and reuses the corrected solver. Repeated solving does not retain visited state. Constructors validate dimensions and coordinates. |
-| `maze_generation` | [maze-generation](../cpp/maze-generation) | Recursive division on a 41x41 odd lattice. BFS checks that every open cell is connected across 100 seeds. Heap-allocated scalar coordinates were removed. |
+| `maze_generation` | [maze-generation](../cpp/maze-generation) | Assignment-specific recursive division on a 40x40 character grid, including preservation of existing end passages. BFS checks that every open cell is connected across 100 seeds. Heap-allocated scalar coordinates were removed. |
 | `zipcode_codec` | [zipcode-codec](../cpp/zipcode-codec) | Frame bars plus five 2-of-5 digits, without a checksum. Stores one integer, returns integer ZIP/string barcode, and keeps helpers private. Encodes leading zeros for 00000..99999; repeated calls and malformed-input exceptions are tested. All values round-trip. |
 | `playlist` | [playlist](../cpp/playlist) | Linked-list front/end insertion, reversal, shuffle and output. The list owns its nodes and disallows copying. Tests cover empty lists, order, and preservation of every song. Recovered from notebook cell 3. |
 | `linked_list_operations` | [linked-list-operations](../cpp/linked-list-operations) | Owns integer nodes; insert/find/delete-first/delete-second. Empty and single-node lists are safe; copying is disabled. Destruction frees remaining nodes. |
@@ -35,11 +35,12 @@ All paths below are relative to the repository root. Executables appear in the C
 | `movie_sort` | [movie-sort](../cpp/movie-sort) | Selection sort by case-sensitive title. Name and rating stay together. Tests cover defaults, duplicates and empty input; caller supplies a valid array and its length. |
 | `leading_digits` | [leading-digits](../cpp/leading-digits) | Reads whitespace-separated signed decimal integer tokens from a filename (default `enrollments.txt`). Counts first nonzero digits, excluding all-zero values. Handles arbitrarily long integer tokens without numeric conversion. |
 | `vowel_runs` | [vowel-runs](../cpp/vowel-runs) | Uses C-strings in 14-byte arrays, as required by Lab 5. Reads words of at most 13 characters from a filename (default `bigwords.txt`); longer tokens are rejected safely. Finds the longest consecutive ASCII vowel run, case-insensitively. First word wins ties. Reports empty/missing files. |
-| `palindrome` | [palindrome](../cpp/palindrome) | Reads a word, then optional `y` to repeat. Case-sensitive byte comparison. `std::string` replaces an overflowing fixed buffer; empty, even/odd-length, and long inputs are tested. |
+| `palindrome` | [palindrome](../cpp/palindrome) | Reads a word, then optional `y` to repeat. Case-sensitive `isPalindrome(char*, int)` uses pointers. A dynamic 15-byte C-string accepts at most 14 characters and rejects longer tokens safely. RAII releases the allocation. Empty ranges, even/odd lengths and input limits are tested. |
+| `pointer_increment` | [pointer_increment.cpp](../cpp/palindrome/pointer_increment.cpp) | Restored Lab 7 part 1: increments an integer through `int*`. Null and overflow are rejected; boundary values and the caller-visible update are tested. |
 | `hamming_distance` | [hamming-distance](../cpp/hamming-distance) | Reads two unsigned 32-bit decimal integers; XOR plus population count. Rejects malformed/out-of-range inputs. Tested against `std::bitset` on 10,000 values. |
-| `word_cipher` | [word-cipher](../cpp/word-cipher) | Subtracts trial keys 0..500 from four explicitly little-endian unsigned words. Key 491 gives `Attack at dawn!!`. Non-printable output is escaped; no aliasing or alignment-dependent casts. |
-| `opengl_shapes` | [opengl-shapes](../cpp/opengl-shapes) | Optional GLUT window with blue background/yellow triangle. `--smoke-test` checks two framebuffer pixels under Xvfb. Framework credit is retained. This is a rendering smoke test, not comprehensive graphics QA. |
+| `word_cipher` | [word-cipher](../cpp/word-cipher) | Subtracts trial keys 1..500 from four explicitly little-endian words. Demonstrates `char*`/`int*` conversions through actual aligned integer storage with `memcpy`; requires 32-bit two's-complement `int`. Key 491 gives `Attack at dawn!!`. Non-printable output is escaped; casts return to the original integer object, avoiding misaligned reads and aliasing violations. |
+| `opengl_shapes` | [opengl-shapes](../cpp/opengl-shapes) | Optional GLUT window with a yellow triangle inside a 400x400 blue square. `--smoke-test` checks four framebuffer pixels under Xvfb. Framework credit is retained. This is a rendering smoke test, not comprehensive graphics QA. |
 
 ## Testing boundaries
 
-Recovered requirements and remaining gaps are documented in [ASSIGNMENT_AUDIT.md](ASSIGNMENT_AUDIT.md). The tests check selected functional properties and regressions, plus sanitizer-detectable memory errors during those runs. Thread failure paths are reviewed but OS resource-exhaustion failures are not fault-injected. Graphics checks sample two pixels. Deep recursive algorithms are intended for bounded learning examples, not unbounded inputs. Linux/WSL is the tested platform; other OS/compiler combinations have not been verified.
+Recovered requirements and remaining gaps are documented in [ASSIGNMENT_AUDIT.md](ASSIGNMENT_AUDIT.md). The tests check selected functional properties and regressions, plus sanitizer-detectable memory errors during those runs. Thread failure paths are reviewed but OS resource-exhaustion failures are not fault-injected. Graphics checks sample four pixels. Deep recursive algorithms are intended for bounded learning examples, not unbounded inputs. Linux/WSL is the tested platform; other OS/compiler combinations have not been verified.

@@ -70,31 +70,35 @@ void display()
     // Clear the screen
     glClear(GL_COLOR_BUFFER_BIT);
 
-    // Draw a rectangle given the four corners
+    // Lab 9: a 400-by-400 blue square with an inscribed yellow triangle.
     glBegin(GL_QUADS); // Use GL_LINE_LOOP for hollow
     glColor3f(0, 0, 1);
-    glVertex2f(1, 1); // x1,y1
-    glVertex2f(719, 1); // x2, y1
-    glVertex2f(719, 480); // x2, y2
-    glVertex2f(1, 480); // x1, y2
+    glVertex2f(160, 40);
+    glVertex2f(560, 40);
+    glVertex2f(560, 440);
+    glVertex2f(160, 440);
     glEnd();
 
     //TRIANGLE
     glBegin(GL_TRIANGLES); // Use GL_LINE_LOOP for hollow
     glColor3f(1, 1, 0);
-    glVertex2f(400, 1); // x1,y1
-    glVertex2f(200, 480); // x2, y1
-    glVertex2f(600, 480); // x2, y2
+    glVertex2f(360, 40);
+    glVertex2f(160, 440);
+    glVertex2f(560, 440);
     glEnd();
 
     if (smokeTest) {
-        unsigned char background[3]{}, triangle[3]{};
+        unsigned char margin[3]{}, left[3]{}, right[3]{}, triangle[3]{};
         glPixelStorei(GL_PACK_ALIGNMENT, 1);
         glReadBuffer(GL_BACK);
-        glReadPixels(50, 240, 1, 1, GL_RGB, GL_UNSIGNED_BYTE, background);
+        glReadPixels(50, 240, 1, 1, GL_RGB, GL_UNSIGNED_BYTE, margin);
+        glReadPixels(180, 380, 1, 1, GL_RGB, GL_UNSIGNED_BYTE, left);
+        glReadPixels(540, 380, 1, 1, GL_RGB, GL_UNSIGNED_BYTE, right);
         glReadPixels(360, 240, 1, 1, GL_RGB, GL_UNSIGNED_BYTE, triangle);
         const bool correct = glGetError() == GL_NO_ERROR &&
-            background[0] == 0 && background[1] == 0 && background[2] == 255 &&
+            margin[0] == 0 && margin[1] == 0 && margin[2] == 0 &&
+            left[0] == 0 && left[1] == 0 && left[2] == 255 &&
+            right[0] == 0 && right[1] == 0 && right[2] == 255 &&
             triangle[0] == 255 && triangle[1] == 255 && triangle[2] == 0;
         std::exit(correct ? 0 : 1);
     }

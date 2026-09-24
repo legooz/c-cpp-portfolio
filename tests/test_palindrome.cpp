@@ -10,6 +10,7 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <type_traits>
 #define CHECK(condition) do { if (!(condition)) throw std::runtime_error("Check failed: " #condition); } while (false)
 template<class Exception, class Function> void expectThrow(Function operation) {
     bool caught = false;
@@ -23,9 +24,18 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 
 int main() {
 
-    CHECK(isPalindrome("")); CHECK(isPalindrome("a")); CHECK(isPalindrome("abba"));
-    CHECK(isPalindrome("racecar")); CHECK(!isPalindrome("ab")); CHECK(!isPalindrome("Abba"));
-    CHECK(isPalindrome(std::string(100000, 'x')));
+    static_assert(std::is_same_v<decltype(&isPalindrome), bool (*)(char*, int)>);
+    for (std::string text : {"", "a", "abba", "racecar"})
+        CHECK(isPalindrome(text.data(), static_cast<int>(text.size())));
+    for (std::string text : {"ab", "Abba"})
+        CHECK(!isPalindrome(text.data(), static_cast<int>(text.size())));
+    std::string large(100000, 'x');
+    CHECK(isPalindrome(large.data(), static_cast<int>(large.size())));
+    char unterminated[] = {'a', 'b', 'b', 'a'};
+    CHECK(isPalindrome(unterminated, 4)); // Function uses the supplied length.
+    CHECK(isPalindrome(nullptr, 0));
+    expectThrow<std::invalid_argument>([] { isPalindrome(nullptr, 1); });
+    expectThrow<std::invalid_argument>([&] { isPalindrome(unterminated, -1); });
 
     return 0;
 }

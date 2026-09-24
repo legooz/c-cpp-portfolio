@@ -169,6 +169,37 @@
       "programs": [
         "leading_digits"
       ]
+    },
+    {
+      "id": "E43",
+      "filename": "211_Assignment_2.docx",
+      "sha256": "398159a8b19c0aa6fed1adb8d0a07100cd8a35f5513fce670611d1e9f9fe2f45",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "maze_search",
+        "maze_generation",
+        "maze_class",
+        "word_cipher"
+      ]
+    },
+    {
+      "id": "E46",
+      "filename": "211_Lab_07.docx",
+      "sha256": "1e63e660ff10ab982eb98f0f53f9c1395b4a3913db1a5926d5aa0ffe918e3b23",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "palindrome",
+        "pointer_increment"
+      ]
+    },
+    {
+      "id": "E47",
+      "filename": "211_Lab_09.docx",
+      "sha256": "f84a598bfb5be44a3f8d10f77d197aa2a544279d68865ad2836060174e85bc45",
+      "kind": "assignment or tutorial instructions",
+      "programs": [
+        "opengl_shapes"
+      ]
     }
   ]
 }
