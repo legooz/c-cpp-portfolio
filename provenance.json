@@ -1,0 +1,326 @@
+{
+  "source_commit": "c17ca3e7f63e3b792aea60a16504732b916488c0",
+  "files": [
+    {
+      "source": "2023/spring/programming-ii/assignment2-problem2/main.cpp",
+      "cell": null,
+      "destination": "cpp/maze-search/main.cpp",
+      "extracted_text_sha256": "14892a6f877ef27ee49f6218a48a8f3219816410be7f3bb48dec530d012065f4",
+      "source_file_sha256": "56581cc96ad76bb94ba53feec23a44a65f0cf16197821b059299e56c5123488a",
+      "published_sha256": "c59153821a5cc09f890dafade6758c82dd73c43b440cb74037bf6dd9b1b80ae8"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment2-problem3/main.cpp",
+      "cell": null,
+      "destination": "cpp/maze-generation/main.cpp",
+      "extracted_text_sha256": "bffec91276fcd9194331c34a70538a67e579545e7b1314ac9b67babc690ebd66",
+      "source_file_sha256": "afdd078a147b945d3612a582fbc8a90cfb62c84757b18bf5fb53845b2662fea9",
+      "published_sha256": "7409caf37ba671dc73467892ab80780a000931b5208b7c77263015da56817d87"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment2-problem4/main.cpp",
+      "cell": null,
+      "destination": "cpp/word-cipher/main.cpp",
+      "extracted_text_sha256": "af63e38e2d89e5537ebf8b811b98aa08dd83171e4109e3e62312a84f051830e3",
+      "source_file_sha256": "68be5db31a706f5bafbd2607cd30d661f8fd82152fcf4bb87dfb0a79ce8cf119",
+      "published_sha256": "041924014e189cbd49e8474132efd8cf2e9accba1488c55ee7a72ec0decc3ab2"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem1/Main.cpp",
+      "cell": null,
+      "destination": "cpp/pair-operators/Main.cpp",
+      "extracted_text_sha256": "ac96118df008f9dd473c71d494c192037be94111b65b11dbb17f58e12f5ab3c2",
+      "source_file_sha256": "b0ea350c0149233e8d1a4778a9096dde54b251745d86710cb693137a8a19334b",
+      "published_sha256": "b0d2f7cb213a09f128a2908d513a382f38ca7a4f69b695a29299c06b8386fad4"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem1/Pair.cpp",
+      "cell": null,
+      "destination": "cpp/pair-operators/Pair.cpp",
+      "extracted_text_sha256": "bbfca30e0c3a9a2e6b64cb37e35a8d6714a93d5f7ba0218c2d49bfdea2414023",
+      "source_file_sha256": "41e461c44825296d7fbe832dc58f1658509b7a7db225aa3c0b85d97ce4b05e80",
+      "published_sha256": "f385411edc4c13305f75e901627106f84a3b5d4867d2801c542c8e5b16a24562"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem1/Pair.h",
+      "cell": null,
+      "destination": "cpp/pair-operators/Pair.h",
+      "extracted_text_sha256": "9649ef95335e08befb65bca4d1d7485ed9cab2a0d6d9b6105cf4b7c55616908f",
+      "source_file_sha256": "aaf6f7b6d2216c842f63849e0199bd769befbd5879ac03320a6c910e8f63f6c1",
+      "published_sha256": "7bea3b1daa26bac759aca8c7c4d66973a034a2802da0b73d3511d03192dc93ef"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem2/main.cpp",
+      "cell": null,
+      "destination": "cpp/zipcode-codec/main.cpp",
+      "extracted_text_sha256": "849d8fc00c178c31564de51de30d9ac27714df92c3550c4a71163c2bcaa84dab",
+      "source_file_sha256": "8596f17bb3b92cebc805c99de2a8d46e2529aeceb7f32423458facbc3ac75d95",
+      "published_sha256": "ad6afb2caea652874b50f7b209fe7805b77504eb0a966d2c69cd40c6009c6cf8"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem2/zipcode.cpp",
+      "cell": null,
+      "destination": "cpp/zipcode-codec/zipcode.cpp",
+      "extracted_text_sha256": "abe104bc0491c641bc638594f807285d9d2e3ba6f7b231fc2dfc27d56fa7359c",
+      "source_file_sha256": "0ce0b2e4944ab4b8373316851809006ee471bb35ecb9323026870e99fda17cd2",
+      "published_sha256": "d75427a227d0a8f05ef679c2c29a48c8165e7bceedbea90a0a518ce614f8e40e"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem2/zipcode.h",
+      "cell": null,
+      "destination": "cpp/zipcode-codec/zipcode.h",
+      "extracted_text_sha256": "02a17565db971e2ba187275e008329a4225252f496a8f520a3a71cc988c3d1df",
+      "source_file_sha256": "e4c37e795f9f9f3dc3dcf655eabe5772ed326f398dfb86df7610347f881a5e6e",
+      "published_sha256": "820a4f93170e0bb1f8a9fe3d3ac6eeea33ff2bee9760e4c3bb411c8bfca5ea85"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem3/Main.cpp",
+      "cell": null,
+      "destination": "cpp/movie-sort/Main.cpp",
+      "extracted_text_sha256": "49cd17342d9ad6b95d8f86888a25c51bfea41364cb4c4ac19e779ec5271fa4f2",
+      "source_file_sha256": "dba9afabc1b6bab26af077d0838bf73a0f95880a6c6b1d62147e0bcfb1fe5371",
+      "published_sha256": "475bf9a42b905bfbe147147ad246e07e066353840fff1fdb11de088f77dc6d9e"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem3/Movie.cpp",
+      "cell": null,
+      "destination": "cpp/movie-sort/Movie.cpp",
+      "extracted_text_sha256": "b97b076018b66ad8668ccb51ac4940865578a56bd314e43e1035dcf4f8e713ca",
+      "source_file_sha256": "6411b3158206baab803c986955f6c41dbe2c0722e3a366f073da441c9805d0bc",
+      "published_sha256": "0320a1496c882a03134f0d87fce1a0b19ec4a9c20cf5dfefa1a4b15b1ad028a2"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem3/Movie.h",
+      "cell": null,
+      "destination": "cpp/movie-sort/Movie.h",
+      "extracted_text_sha256": "be4053fa26af0046d4b3506193450a0bcb065b062f6e3d875e565185955e18d6",
+      "source_file_sha256": "f4940aeb7dc3ad203217d0847d0634ec0f9ff1b1e29699d768eef9a3cd4fcb60",
+      "published_sha256": "13a3ce16372599fa5ca0691aac1907b5b1ee3c02c9b1c8ea714ae7c34b9f2b17"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem4/Source.cpp",
+      "cell": null,
+      "destination": "cpp/leading-digits/Source.cpp",
+      "extracted_text_sha256": "83e09a02ad7ec2cae6b3c42d6e515bd4c84ecb35a143351f79db647b5049b71c",
+      "source_file_sha256": "83e09a02ad7ec2cae6b3c42d6e515bd4c84ecb35a143351f79db647b5049b71c",
+      "published_sha256": "2ade04db11674dabbf791e4af88a54e237729cd7ae0e51332314dfd30b13625a"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem5/Main.cpp",
+      "cell": null,
+      "destination": "cpp/maze-class/Main.cpp",
+      "extracted_text_sha256": "b12f9356cf0fe2819209f90431228b9d819c93a084e604001f8a05dac2d4cccb",
+      "source_file_sha256": "e43a065cda6c4e5dcbcabc7d4afcab22daec1799fd4b163fdcc716ea216d2cce",
+      "published_sha256": "957aecd3cd30f29d526581b82268f8fcf8b09fcb9d26970ab44ac8a85352611b"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem5/Maze.cpp",
+      "cell": null,
+      "destination": "cpp/maze-class/Maze.cpp",
+      "extracted_text_sha256": "df33372e670f6b8b8a2638603e8e79da906766c7f66bd92fa5f0f74980ba2966",
+      "source_file_sha256": "366f176db83f2cd5beed49f9bf99285ef66a2488428ac1266f927701c96bff14",
+      "published_sha256": "d68d3a55694093317fe6e1e1ba2607c4d32561a7fba9d7271ccb93e381f723e0"
+    },
+    {
+      "source": "2023/spring/programming-ii/assignment3-problem5/Maze.h",
+      "cell": null,
+      "destination": "cpp/maze-class/Maze.h",
+      "extracted_text_sha256": "51d0c9fbf53c9c2aff0b8a006cbb1a61823378dde5e563d955edb57da0bfb0ef",
+      "source_file_sha256": "4b24409dfadd18d3406c543b2a19a15e73f2a6ba8f6e37e49206a7c5798c278a",
+      "published_sha256": "22a5d607734f30bf1472c0341ad1fbde83a472962bf37319a7f6c97b7113b195"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab04/lab4.cpp",
+      "cell": null,
+      "destination": "cpp/selection-sort/lab4.cpp",
+      "extracted_text_sha256": "f29334db5c3a087b3ecf6ef7b74056d77a4337eeadb0246110053ff949151ec6",
+      "source_file_sha256": "0b1bcdf5d9486185d1c098d505305c2e3218fedae93a2676f7159b88dd94b639",
+      "published_sha256": "a0e0c40cccc9aa0acb71bc692403d62c874548d73d9ebe8cbe239e3b179b0039"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab05/Source.cpp",
+      "cell": null,
+      "destination": "cpp/vowel-runs/Source.cpp",
+      "extracted_text_sha256": "30545913a7e4b07679f9c22297779bd83a8775869c745e72814a9e0a2cd5323a",
+      "source_file_sha256": "163893934e1a8694b228586731eeb911b948ab14b4f4daa6e856c592da3f87bb",
+      "published_sha256": "013c19c7144e694fe06aa6f2fb730f2f42ecf16375569cbd0c55e94581cf534a"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab06/lab06.cpp",
+      "cell": null,
+      "destination": "cpp/recursive-sorted/lab06.cpp",
+      "extracted_text_sha256": "8f21d6f97f6c2d93657d8f39b8ce586f0cbe776ea53c968aa54717434f224f09",
+      "source_file_sha256": "75502647ff544a815b797f13fb100e1f5e8c402b2165c4054e5b54ff42703302",
+      "published_sha256": "db76c803cdc16f4fcc4e0e565de04a9a7fe39b85dd56bc943681e265428565f8"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab07/lab07.cpp",
+      "cell": null,
+      "destination": "cpp/palindrome/lab07.cpp",
+      "extracted_text_sha256": "85b80705ca08b4cccc9adf8e6e1cd2c122508e72bcf4e579836319b8ec03b725",
+      "source_file_sha256": "cf122316f62ccda9beafd1f0e89b2e2b22ff02334ae3ac288c4493149a1ca924",
+      "published_sha256": "3e3551912def108e5f323d65668971b50cf4996e2873cff4273c61523cc6bd98"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab09-opengl/goozen_lab09.cpp",
+      "cell": null,
+      "destination": "cpp/opengl-shapes/goozen_lab09.cpp",
+      "extracted_text_sha256": "03fa631e3b5df566af979ab7d1d4684b36ff85ae32bffc39fa229ccdf0d2afaa",
+      "source_file_sha256": "93aa2739feb8b698e7105c7eb405cf8b87ffc4e68f5bb16a4e229c94b63a7056",
+      "published_sha256": "53f35097ac0285ede8926fad11fd8a53cedd87ff8d8c52f65654445770ff377d"
+    },
+    {
+      "source": "2023/spring/programming-ii/lab14/goozen_lab14.cpp",
+      "cell": null,
+      "destination": "cpp/hamming-distance/goozen_lab14.cpp",
+      "extracted_text_sha256": "93367490a2fda7c1b27804f949e8fd2b07caa4689ddaac5d9b88f7cbbec2862a",
+      "source_file_sha256": "7de3f8f4bb5a0681765163d6a63e15715d7296180f19cc7a84b42c3bb1e2b060",
+      "published_sha256": "60e563bd75d88e3b76d3cc70372925c9bc9c53fa658130a7eb7bcda49f349c8f"
+    },
+    {
+      "source": "2025/spring/operating-systems/bankers_algorithm.c",
+      "cell": null,
+      "destination": "c/bankers/bankers_algorithm.c",
+      "extracted_text_sha256": "c9a81db556ec97a7dfc8a66f09eb55a9398df0dd4406418a7de40913f7f0e21b",
+      "source_file_sha256": "71f0d29a77e23d875bd974ca04852d627c31cd82aa188f3a3836c927b53a56be",
+      "published_sha256": "40001a589ab0059b69d775e602cd5db18b5ed66f8ba2899871b5b367d72f1b6a"
+    },
+    {
+      "source": "2025/spring/operating-systems/process_info.c",
+      "cell": null,
+      "destination": "c/posix/process_info.c",
+      "extracted_text_sha256": "972781ab1f789a727459e18d8bca72a9ba33183f099af7b20f1207fe58640cb2",
+      "source_file_sha256": "4ed3011e7c66bb43f64fdbf4988f0da9e04b64f79ab88c857a51c192449fee39",
+      "published_sha256": "676dcec6e3da5257989f41ce52fc06ca93924ad2c2db23f5eb8881a7dd1cb8bf"
+    },
+    {
+      "source": "2025/spring/operating-systems/thread_output_without_semaphore.c",
+      "cell": null,
+      "destination": "c/posix/thread_output_without_semaphore.c",
+      "extracted_text_sha256": "e3960e17b8aa7babfaa7e2f5eadbdd343066c0d6abdb33a4851dfceac13b3ef1",
+      "source_file_sha256": "020fa5c25bbed5fcf2e34227924e6a99d381a345bfac1652e70b4148ac3beeea",
+      "published_sha256": "11464b359c5180fe9d1027a49ebfac88a7751bdcbdfe29b7110317535dd9c3f9"
+    },
+    {
+      "source": "2025/spring/operating-systems/thread_output_with_semaphore.c",
+      "cell": null,
+      "destination": "c/posix/thread_output_with_semaphore.c",
+      "extracted_text_sha256": "652837b88bef98fb4358a61ab3ff6aa10f38d96af1a7435215c2cd7b8e0c6076",
+      "source_file_sha256": "012445b2a1e78deeda9f69c0263381d1e5256ab84a0dbb53dde6d1fef35193c5",
+      "published_sha256": "f143d626a21aa130dfaed18550298e18c16c2dd5706bfd7e6f9b6f179f9621bc"
+    },
+    {
+      "source": "2024/spring/computer-architecture/mpi-minimum.c",
+      "cell": null,
+      "destination": "c/mpi-minimum/mpi-minimum.c",
+      "extracted_text_sha256": "6f915479d78a50e921129e89974df1826234c8cf487174ffe23ffdaa58c2d286",
+      "source_file_sha256": "6f915479d78a50e921129e89974df1826234c8cf487174ffe23ffdaa58c2d286",
+      "published_sha256": "3dc6cc7d329902e2f940c5b40fa7f8ac30a37ed792301feeaed23db2fe522f05"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/binary-trees.ipynb",
+      "cell": 0,
+      "destination": "cpp/binary-trees/node.h",
+      "extracted_text_sha256": "db5214717c961f0ca0ff39cdbe75e66ea7f7b40be637313246e750338c2d0969",
+      "source_file_sha256": "a29aa049e728862c1f9c21c5511104a917346b6b828166df15c2bac998f81953",
+      "published_sha256": "2c53f99d86a271412583c0c4e9d144a2c2d6ce6efd00ee061f562337fd2aa26c"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/binary-trees.ipynb",
+      "cell": 1,
+      "destination": "cpp/binary-trees/node.cpp",
+      "extracted_text_sha256": "c02640386e90fb81b7c6c75b7f1b155d7db952f60a3cb322fc214dfa6c49eef6",
+      "source_file_sha256": "a29aa049e728862c1f9c21c5511104a917346b6b828166df15c2bac998f81953",
+      "published_sha256": "527cc89c9019e03c239cffa8bda10a3e75bf5f8d9922e3a460b625bb21b97971"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/binary-trees.ipynb",
+      "cell": 2,
+      "destination": "cpp/binary-trees/main.cpp",
+      "extracted_text_sha256": "af5501092a4161996885840122a3487f8e2f4db8956a2e0d1777d5255798d362",
+      "source_file_sha256": "a29aa049e728862c1f9c21c5511104a917346b6b828166df15c2bac998f81953",
+      "published_sha256": "d07976f14c9ed6c85bf3bd16bda334cbcb336be6606fa050e968510ca3d0088f"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/homework2.ipynb",
+      "cell": 3,
+      "destination": "cpp/playlist/PlaylistManagementSystem.cpp",
+      "extracted_text_sha256": "5bc1aa66a5d9bc24ccd025f4985c39d62aeaa9a29cba59f8ae63a1d910310f3e",
+      "source_file_sha256": "6bb28b75247f9b8838351a844b995172d78a81be2211687213da1697976b3058",
+      "published_sha256": "7e960e38ebdfc9c07b640f14a0e35d1dae366d6231502557403803fc12845280"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/insertion-sort.ipynb",
+      "cell": 1,
+      "destination": "cpp/insertion-sort/insertion.cpp",
+      "extracted_text_sha256": "3b34f2820fa41373214040040d7b08efc6f373eac8e4013fa6c06e087544181b",
+      "source_file_sha256": "7b8e639456bd3fcacb80a5fb90f30ed73c0d96a33ecb85cd94ffc08ff86bc040",
+      "published_sha256": "b50144c6297cc2c4fd6e070d1ea1b77f268a7019502599d51d465265e15f43cc"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/linked-list-basics.ipynb",
+      "cell": 4,
+      "destination": "cpp/linked-list-basics/IntNode.cpp",
+      "extracted_text_sha256": "b3f6c651321ea0bcbcffdc240dd2b579eadb2f2b6383abbdbb31b2293ddaec95",
+      "source_file_sha256": "6f2bda6528726ec89b993978237985ad6610611a13618c7f585a8facdcb12ca9",
+      "published_sha256": "d7c8aa53f07f7751165be9455b95459784aae879422235c5028e6634f9a00059"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/linked-list-basics.ipynb",
+      "cell": 7,
+      "destination": "cpp/linked-list-basics/main.cpp",
+      "extracted_text_sha256": "2b4dfce75faa6cf2d75bd896ca2dda58f433d785c8be0e5cce9e2aa194dbb90d",
+      "source_file_sha256": "6f2bda6528726ec89b993978237985ad6610611a13618c7f585a8facdcb12ca9",
+      "published_sha256": "7f8a3505c83dd4fa27158058b5a39103a85c39ed3d6fdedc0e856da81820a6ae"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/linked-list-operations.ipynb",
+      "cell": 2,
+      "destination": "cpp/linked-list-operations/intLinkedList.cpp",
+      "extracted_text_sha256": "5f13231265e1600299db205931b758b6dd1f856f88d3cb7e35f4725a3b4b0c47",
+      "source_file_sha256": "7ee4e383e52471f8cdb50f651b43f5dbe3565fb827be628bcd6944dae6d9338f",
+      "published_sha256": "805da39b099a8be53083b44644472bcab1902a86e4e53ab466061c5034718174"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/priority-queues.ipynb",
+      "cell": 0,
+      "destination": "cpp/priority-queues/personQueue.cpp",
+      "extracted_text_sha256": "bb08491419f419dfed8ebe2d606ea39b4f29f3de4cac39733010c8834f8d2cc4",
+      "source_file_sha256": "d2b120daf8470a10a931553dcae287e8a1fb029e48f74df0dc76ec725cc052d4",
+      "published_sha256": "c7d0c648e95357b10beb15b6595ac2d1b75d384b3e9e73b9f1b62574a61defa4"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/queues.ipynb",
+      "cell": 0,
+      "destination": "cpp/queues/queue.h",
+      "extracted_text_sha256": "de1d336b20ccd1826c16b51c50b276bea11f1ad277779f8aecf0a99c88b057ba",
+      "source_file_sha256": "dd22e1e9afe8ad3986cc46228fa5953274db38165f241cab75a5f4cc591d1020",
+      "published_sha256": "2540cccbc1beaf0b501b3a1bc0cd2489f92f3033c6a1eb87c17f3e969bdcf8f7"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/queues.ipynb",
+      "cell": 1,
+      "destination": "cpp/queues/queue.cpp",
+      "extracted_text_sha256": "fa0ff366f958fdc8d94efbc76f2862e5c98d85ff61853f92dee67be1b6a1ed6f",
+      "source_file_sha256": "dd22e1e9afe8ad3986cc46228fa5953274db38165f241cab75a5f4cc591d1020",
+      "published_sha256": "648cf7d09cabb2bb58ff5d8ee1967bf6263d9072875299b1a8d0649770a425b0"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/queues.ipynb",
+      "cell": 2,
+      "destination": "cpp/queues/queueMain.cpp",
+      "extracted_text_sha256": "ed94070b7a4446ad303c6592f2c5f79999708cdd5e49cf6640c128cf41c8660b",
+      "source_file_sha256": "dd22e1e9afe8ad3986cc46228fa5953274db38165f241cab75a5f4cc591d1020",
+      "published_sha256": "a711cc0407f90da5b75819b390cf30dd9e364378560c32f805f679da9a63c2bf"
+    },
+    {
+      "source": "2024/spring/algorithms-and-data-structures/tree-traversal.ipynb",
+      "cell": 4,
+      "destination": "cpp/tree-traversal/mainTest.cpp",
+      "extracted_text_sha256": "36b7381931ad8f304ac83dbd46b34810b9e6bafeb67ba39176dae853e99b4dc0",
+      "source_file_sha256": "51f76800a19d18c89753bd702f5081aa89886e5a4990914fa015a763c46e8464",
+      "published_sha256": "ca7dbadf78c702a2525011d5c5669f0af3d0ede952f7ef6512212b8060b9928f"
+    }
+  ],
+  "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based."
+}
