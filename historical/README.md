@@ -15,7 +15,7 @@ Seventeen additional programs recovered from CSCE A201 (Fall 2021 and Fall 2022)
 | [Checked array](cpp-fundamentals/checked-array) | Templates and bounds exceptions |
 | [Linked-list lab](cpp-fundamentals/linked-list-editor) | Adding, finding, editing and removing string nodes |
 
-Course scaffolding and collaborator credits remain; repeated sole-author banners are centralized in NOTICE.md. `integer_math.c` explicitly credits Chr. Lauter and Lars Goozen, with University of Alaska Anchorage copyright. A student identifier was removed from `decimal_string_addition.c`. See the repository [NOTICE](../NOTICE.md) and the `historical_recovery` section of [provenance.json](../provenance.json).
+Course scaffolding and collaborator credits remain; repeated sole-author banners are centralized on the shared portfolio attribution page. Original joint-author and copyright notices remain in `integer_math.c`; the shared attribution page identifies the contributors. A student identifier was removed from `decimal_string_addition.c`. See the repository [NOTICE](../NOTICE.md) and the `historical_recovery` section of [provenance.json](../provenance.json).
 
 ## Build and sample checks
 
