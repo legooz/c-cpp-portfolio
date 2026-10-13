@@ -1,6 +1,5 @@
 /******************************************
 * Math Library Demo
-* Date Due 10/25/22
 * Description: This program utilizes .h files and .c files to create multiple files, with
 *  a small math library. It calls onto the math library to utilize it's functions to
 * achieve the results.

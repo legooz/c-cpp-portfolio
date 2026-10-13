@@ -71,7 +71,10 @@
       "destination": "cpp/zipcode-codec/zipcode.h",
       "extracted_text_sha256": "02a17565db971e2ba187275e008329a4225252f496a8f520a3a71cc988c3d1df",
       "source_file_sha256": "e4c37e795f9f9f3dc3dcf655eabe5772ed326f398dfb86df7610347f881a5e6e",
-      "published_sha256": "a00adfc8f4b255e3531c57a648f59b729f1a5798e3c5ec9ffd22cb5b0459a68b"
+      "published_sha256": "0502390d914e8bb39574d528736032081b8011397b18a11092de8c18f58ca4ff",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2023/spring/programming-ii/assignment3-problem3/Main.cpp",
@@ -135,7 +138,10 @@
       "destination": "cpp/selection-sort/selection_sort.cpp",
       "extracted_text_sha256": "f29334db5c3a087b3ecf6ef7b74056d77a4337eeadb0246110053ff949151ec6",
       "source_file_sha256": "0b1bcdf5d9486185d1c098d505305c2e3218fedae93a2676f7159b88dd94b639",
-      "published_sha256": "b7687e6d3866585222857cc5cd34e8681591f8b81d4af3a68e28a2b980d1a844"
+      "published_sha256": "487d0db3931926c091fefc3fc77d012d6b9e799e985e31f8929aaa08bbc8e224",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2023/spring/programming-ii/lab05/Source.cpp",
@@ -143,7 +149,10 @@
       "destination": "cpp/vowel-runs/vowel_runs.cpp",
       "extracted_text_sha256": "30545913a7e4b07679f9c22297779bd83a8775869c745e72814a9e0a2cd5323a",
       "source_file_sha256": "163893934e1a8694b228586731eeb911b948ab14b4f4daa6e856c592da3f87bb",
-      "published_sha256": "a68677939041b1115386dbd494a64f6c541a13f6e43688747846edd98619b965"
+      "published_sha256": "cd165396728226fb7f0f989f8028495caa0746062b8fe7d5c22cd02aa3691f2c",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2023/spring/programming-ii/lab06/lab06.cpp",
@@ -159,7 +168,10 @@
       "destination": "cpp/palindrome/palindrome.cpp",
       "extracted_text_sha256": "85b80705ca08b4cccc9adf8e6e1cd2c122508e72bcf4e579836319b8ec03b725",
       "source_file_sha256": "cf122316f62ccda9beafd1f0e89b2e2b22ff02334ae3ac288c4493149a1ca924",
-      "published_sha256": "5097aeeb030cead5bb9c21c94d8ff15bd92fcbfd085b8cdda7ba71b212a5a52f"
+      "published_sha256": "4035e295335284f0400fbe0df03714bfd07d35d9b4b28e02a573ed9f87ffb136",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2023/spring/programming-ii/lab09-opengl/goozen_lab09.cpp",
@@ -167,7 +179,10 @@
       "destination": "cpp/opengl-shapes/opengl_shapes.cpp",
       "extracted_text_sha256": "03fa631e3b5df566af979ab7d1d4684b36ff85ae32bffc39fa229ccdf0d2afaa",
       "source_file_sha256": "93aa2739feb8b698e7105c7eb405cf8b87ffc4e68f5bb16a4e229c94b63a7056",
-      "published_sha256": "1af8b8d2a42056d1c84b539fa365daf6a3808204d4b7db7f17b6a0f165323b8e"
+      "published_sha256": "3355c9493aaac014e083a6102fa63cc2c432998875f888d3c30d13424210bba1",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2023/spring/programming-ii/lab14/goozen_lab14.cpp",
@@ -215,7 +230,10 @@
       "destination": "c/mpi-minimum/mpi-minimum.c",
       "extracted_text_sha256": "6f915479d78a50e921129e89974df1826234c8cf487174ffe23ffdaa58c2d286",
       "source_file_sha256": "6f915479d78a50e921129e89974df1826234c8cf487174ffe23ffdaa58c2d286",
-      "published_sha256": "62e7306c8373303daac2c43307febeee4d07c954899e833a9177f9772f78830f"
+      "published_sha256": "121a8f3da0250bf242068e4a32cf5fdbb9064d660bbceb0201c56bc1df6ee52e",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/binary-trees.ipynb",
@@ -279,7 +297,10 @@
       "destination": "cpp/linked-list-operations/intLinkedList.cpp",
       "extracted_text_sha256": "5f13231265e1600299db205931b758b6dd1f856f88d3cb7e35f4725a3b4b0c47",
       "source_file_sha256": "7ee4e383e52471f8cdb50f651b43f5dbe3565fb827be628bcd6944dae6d9338f",
-      "published_sha256": "805da39b099a8be53083b44644472bcab1902a86e4e53ab466061c5034718174"
+      "published_sha256": "d8e1ff7bc739ff103f1cc5c339b2ec03b5f725831e3c71f211813641b796f077",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     },
     {
       "source": "2024/spring/algorithms-and-data-structures/priority-queues.ipynb",
@@ -328,7 +349,10 @@
       "destination": "cpp/palindrome/pointer_increment.cpp",
       "extracted_text_sha256": "3a1e05d4dc62399c7f1ff782e8c13e476876513efb7556b837f9fda7bf566243",
       "source_file_sha256": "cf122316f62ccda9beafd1f0e89b2e2b22ff02334ae3ac288c4493149a1ca924",
-      "published_sha256": "374cb2342cf8987dc73ae2b3cc0cb1d66853684ac638d25087ae5287ddf5c04d"
+      "published_sha256": "81bf8485f94f62332cc1512bad5ca0f4940a6b72c1727dfe232e1e200917109a",
+      "presentation_changes": [
+        "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+      ]
     }
   ],
   "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based.",
@@ -341,92 +365,119 @@
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "897458bf957305f24e8cc7270c5f41b0af89412291d29179255ac827d4de97a9",
         "destination": "historical/c-fundamentals/decimal_string_addition.c",
-        "published_sha256": "9ec45cf63f6f5135ba84278214e32a6d3df14b200fd2f51516f026b923a6fc06",
+        "published_sha256": "7da733fb8518639b8890fea4d08515c05cb9894eb00e1f01d010bd97b6e0f7a2",
         "topic": "arithmetic",
         "transformations": [
           "Removed student identifier and/or normalized text encoding."
         ],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "arrays.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "b9c011aeefd9a73b213958c8417c94d6d5aaffb612dbda6f468925f541c2322e",
         "destination": "historical/c-fundamentals/sentinel_arrays.c",
-        "published_sha256": "b9c011aeefd9a73b213958c8417c94d6d5aaffb612dbda6f468925f541c2322e",
+        "published_sha256": "9cff936ff793c42601fd615e7ae04326d8002fc1587a20163d3a6aa8a1c45385",
         "topic": "arrays",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "basic.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "59a84b91f1ffb6a3d758d441d31eb582c37195ed0bdb16b19c65ff152c815f45",
         "destination": "historical/c-fundamentals/integer_math.c",
-        "published_sha256": "59a84b91f1ffb6a3d758d441d31eb582c37195ed0bdb16b19c65ff152c815f45",
+        "published_sha256": "6155822dea50e1a6abcf9967b64ea08fdc07b7bf0690b0f9039e58d917376f6c",
         "topic": "basic",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "comparing_strings.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "07553c724bfa4f1db38ccba05a997213051c58b3b3d318917653fcfcef5d2054",
         "destination": "historical/c-fundamentals/string_comparison.c",
-        "published_sha256": "07553c724bfa4f1db38ccba05a997213051c58b3b3d318917653fcfcef5d2054",
+        "published_sha256": "63db3f32eb0da419dad1c45976ba8fe94a11b54c1b8099a83fe1cee3cf43ad75",
         "topic": "comparing strings",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "conversion_from_binary.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "1084fddebf8138fb491782405f3124ed507b19fe0fd3e0e1714dc5d2639aa95a",
         "destination": "historical/c-fundamentals/binary_to_decimal.c",
-        "published_sha256": "1084fddebf8138fb491782405f3124ed507b19fe0fd3e0e1714dc5d2639aa95a",
+        "published_sha256": "1514c806d5194899081eb3b3cb57b4e8f8527822a8771ed2f71f5adefcd2824a",
         "topic": "conversion from binary",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "conversion_to_binary.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "992231e7748278814ae131f768257f43a6b7e1199553d4a55bd8be4b689c46eb",
         "destination": "historical/c-fundamentals/decimal_to_binary.c",
-        "published_sha256": "992231e7748278814ae131f768257f43a6b7e1199553d4a55bd8be4b689c46eb",
+        "published_sha256": "d42a045b0ad50a7ef415a0a807672cfe6ac0cb10fe6d64301316f968ac381078",
         "topic": "conversion to binary",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "strings.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "2ee8942f179802e49a33a375b9388aaa0d1c409924ca03c9cb43912e820a4a38",
         "destination": "historical/c-fundamentals/string_functions.c",
-        "published_sha256": "2ee8942f179802e49a33a375b9388aaa0d1c409924ca03c9cb43912e820a4a38",
+        "published_sha256": "9e798dd7221a21b2efe25bd9aab9b381cb0ede2757fc57233859d49013716fc4",
         "topic": "strings",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "substring.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "95f475c824165a8cbf46e2806891f326b6bd27c809522e29671d287898efcde9",
         "destination": "historical/c-fundamentals/substring_search.c",
-        "published_sha256": "95f475c824165a8cbf46e2806891f326b6bd27c809522e29671d287898efcde9",
+        "published_sha256": "95c461adf4cce634006aedaee14eacc23c8267fda9b6225bbc111df874497aca",
         "topic": "substring",
         "transformations": [],
-        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "main.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "2df89be3ac5137cfae47cf6a16dda01adb79a27f79a1284ae7391ee68d90d24d",
         "destination": "historical/c-experiments/math-library/main.c",
-        "published_sha256": "c6fbd5fc7a7eacadd276a452da64dbe5bc7ef81b154a1b439371c79468973b67",
+        "published_sha256": "9c7238472d50ff538b37cea8430c8728a2604486e7059b162ed9be952878189d",
         "topic": "multi-file math library",
         "transformations": [],
-        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+        "notes": "Historical student coursework; existing comments and course scaffolding retained.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "userMathLib.c",
@@ -453,40 +504,52 @@
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "6e73162af8eb43e28d7408f7f0540e724558c89f76e5c6109de4f873796f4a53",
         "destination": "historical/c-experiments/binary-range/binary_table.c",
-        "published_sha256": "e79acd60fa264f3d48f60de539d5a8fa01f43e7efa541a41ee0c72c57b72b997",
+        "published_sha256": "f7c093db55e9afc09bc6a6efc224617ec68de02c5217d5bc16271da1811ddfd9",
         "topic": "binary table",
         "transformations": [],
-        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+        "notes": "Historical student coursework; existing comments and course scaffolding retained.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "goozen_problem_3.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "a4831bf2da4197db778cea9bdaacadb820207fff5f18fd143dd242fef8b19ac2",
         "destination": "historical/c-experiments/temperature-conversion/temperature_conversion.c",
-        "published_sha256": "2f262ed9d6aa8a84174e059b0c6943ef342423d89bad7048256b1c3c690c3481",
+        "published_sha256": "0cc955fd106094912ba7d98060fbfd23fde813f84e85d3be5b7d764839cd87a1",
         "topic": "temperature conversion",
         "transformations": [],
-        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+        "notes": "Historical student coursework; existing comments and course scaffolding retained.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "goozen_problem4b.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "571490076a825f9344fac19729c936739cf28169b02728dff660a2572e4ff121",
         "destination": "historical/c-experiments/temperature-equality/temperature_equality.c",
-        "published_sha256": "8b03cd5ad641f44a2e30309f2c528c0d3e9a95df2417e6e6c6e798677d2ce1b4",
+        "published_sha256": "678187e47aa1aa78e0e979867f453d74e66095d8f41cac63f61a30cf91b18f6a",
         "topic": "temperature equality search",
         "transformations": [],
-        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+        "notes": "Historical student coursework; existing comments and course scaffolding retained.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "goozen_problem5.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "28fcdfa2383c5f1ac62425bd53660e8e05d45bc4460676a16569b8b1840e6370",
         "destination": "historical/c-experiments/monty-hall/monty_hall.c",
-        "published_sha256": "b5b093bc9dfaa9dad813e6e3cc1a4278676fc5802e419b9f9b58c2712ac85473",
+        "published_sha256": "e8c8524ab9bf5ca82fda1b5235bc9f178bd571c907d16eef30635c86710a0720",
         "topic": "Monty Hall simulation",
         "transformations": [],
-        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+        "notes": "Historical student coursework; existing comments and course scaffolding retained.",
+        "presentation_changes": [
+          "2026-10-13: replaced instructional comments with project descriptions; removed stale task markers; documented preserved historical defects. Executable code unchanged."
+        ]
       },
       {
         "source_file": "goozen_problem4.cpp",
@@ -625,5 +688,9 @@
   "naming_cleanup": {
     "date": "2026-10-13",
     "changes": "Replaced legacy submission filenames and chronological grouping folders with descriptive project names; centralized repeated sole-author banners in NOTICE.md. Preserved original-source labels and hashes. Algorithms unchanged; OpenGL window title made descriptive."
+  },
+  "comment_cleanup": {
+    "date": "2026-10-13",
+    "scope": "Instructional comments, course-task banners and public project descriptions. Shared copyright/framework credits and known defects preserved; executable tokens and --assignment interface unchanged."
   }
 }

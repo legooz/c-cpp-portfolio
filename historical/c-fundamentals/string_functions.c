@@ -1,11 +1,5 @@
 
-/* In this whole file, no call to any function 
-   
-   in string.h nor ctypes.h may be made.
-
-   NO strlen, strchr, strrchr, etc.
-
-*/
+/* String helpers implemented with character loops instead of string.h. */
 
 #include <stdio.h>
 
@@ -16,7 +10,7 @@ int string_len(char str[]) {
         x++;
     }
     
-  return x; // TODO: STUB
+  return x;
 }
 
 
@@ -31,7 +25,7 @@ int string_len(char str[]) {
 
    Calls string_len().
 
-   May not use any temporary array or string.
+   Compares mirrored characters without a temporary string.
 
 */
 int string_is_palindrome(char str[]) {
@@ -62,24 +56,19 @@ int string_character_index(char str[], char c) {
             return i;
         }
     }
-   return -1; // TODO: STUB
+   return -1;
 }
 
 
-/* Returns the last index (first from the right) where the
-   character c figures in the string str.
-
-   If the character c does not figure in str, returns -1.
-
-   Calls string_len().
-*/
+/* Search backward for c. Historical limitations: index zero is skipped,
+   and an empty string starts the scan before the array. */
 int string_character_index_reverse(char str[], char c) {
     for(int i = string_len(str) - 1; i != 0; i--){
         if(c == str[i]){
             return i;
         }
     }
-   return -1; // TODO: STUB
+   return -1;
 }
 
 
@@ -92,7 +81,7 @@ int string_character_index_reverse(char str[], char c) {
    Otherwise, if none of the characters of str2 can be found in str1, 
    returns zero.
 
-   Calls string_character_index() for each of the characters in str2.
+   Uses nested character loops to find a shared character.
 
 */
 int string_common_characters(char str1[], char str2[]) {
@@ -125,7 +114,7 @@ int string_contains_uppercase(char str[]) {
             return 1;
         }
     }
-   return 0; // TODO: STUB
+   return 0;
 }
 
 
@@ -147,7 +136,7 @@ int string_contains_lowercase(char str[]) {
             return 1;
         }
     }
-  return 0; // TODO: STUB
+  return 0;
 }
 
 
@@ -168,46 +157,23 @@ int string_contains_digit(char str[]) {
             return 1;
         }
     }
-   return 0; // TODO: STUB
+   return 0;
 }
 
 
-/* Returns a boolean indicating if the string str is a valid password.
-
-   A password is valid if it contains 
-
-   * at least one upper-case character and
-   * at least one lower-case character and
-   * at least one digit and
-   * at least one special character.
-
-   A special character is one of the characters
-
-   '+', '=', '-', '*', '/', '%', '^', '&', '~', '#', '{', '[', '|',
-   '\\', '@', ']', '$', '!', ':', ';', ',', ',', '.', '<', '>', '(' or
-   ')'.
-
-   Calls the functions string_contains_uppercase(),
-   string_contains_lowercase(), string_contains_digit() and 
-   string_common_characters().
-
-   FYI: The instructor's solution is 7 lines long, including the
-   function's declaration header and final closing curly brace.
-
-*/
+/* Historical password check: requires a lowercase letter, a digit and a
+   character from the literal special-character string below. It omits the
+   intended uppercase check, and formatting characters in the literal are
+   also accepted. This is not a production password validator. */
 int string_is_valid_password(char str[]) {
     if(string_contains_lowercase(str) && string_contains_digit(str) && string_common_characters(str,"'+', '=', '-', '*', '/', '%', '^', '&', '~', '#', '{', '[', '|', '\\', '@', ']', '$', '!', ':', ';', ',', ',', '.', '<', '>', '(' ')'")){
         return 1;
     }
-   return 0; // TODO: STUB
+   return 0;
  }
 
 
-/* A main() to test the functions defined above.
-
-   No modification is needed here.
-
-*/
+/* Demonstrate the string helpers on an input string and character. */
 int main(int argc, char **argv) {
   const int BUF_LEN = 128;
   char str[BUF_LEN];

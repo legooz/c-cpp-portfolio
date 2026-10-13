@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-// Assignment format: frame bars plus five 2-of-5 digits; no checksum.
+// Barcode format: frame bars plus five 2-of-5 digits; no checksum.
 class zipcode {
 public:
     zipcode() = default;

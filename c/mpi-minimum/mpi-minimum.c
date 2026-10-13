@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
     const int local_count = count / ranks + (rank < count % ranks);
     int *local;
     if (assignment) {
-        /* The original handout explicitly requires broadcasting the entire array. */
+        /* Broadcast the entire input array to every rank. */
         if (rank != 0) array = malloc((size_t)count * sizeof(*array));
         if (!array) { fputs("Broadcast allocation failed.\n", stderr); MPI_Abort(MPI_COMM_WORLD, 1); }
         MPI_Bcast(array, count, MPI_INT, 0, MPI_COMM_WORLD);

@@ -33,39 +33,9 @@ int main(int argc, char **argv) {
   /* Print the string once */
   printf("The strings you entered are \"%s\" and \"%s\".\n", needle, haystack);
 
-  /* Determine if needle is contained in the haystack
-
-     Set the variable substring to 1 if the needle is in the haystack.
-
-     Set the variable substring to 0 if the needle is not in the
-     haystack.
-
-     DO NOT DECLARE ANY OTHER VARIABLES; USE ONLY THE ONES ALREADY
-     DECLARED.
-
-     Examples:
-
-     needle = "adam" is contained in haystack = "Madame Bovary"
-
-     needle = "" is contained in haystack = "Hello World"
-
-     needle = "or" is contained in haystack = "Hello World"
-
-     needle = "orange" is not contained in haystack = "Goranje"
-
-     needle = "banana" is contained in haystack = "banana"
-     
-     Needles longer than the haystack can never be contained in the
-     haystack.
-
-     CHECK, DOUBLE-CHECK, TIPLE-CHECK AND QUADRUPLE-CHECK THAT YOU
-     NEVER ACCESS ANY CHARACTER OUT OF THE ALLOWABLE RANGE IN ANY OF
-     THE TWO STRINGS!
-
-     You will want to start by computing the lengths of the needle and
-     of the haystack.
-     
-  */
+  /* Historical substring-search attempt. The nested loops detect any shared
+     character, not a contiguous substring. Empty inputs also leave length
+     variables uninitialized. This incomplete behavior is preserved. */
     
     substring = 0;
     

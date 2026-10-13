@@ -1,6 +1,5 @@
 // 
 // Decimal string addition
-// Student identifier removed for publication.
 // 
 #include <stdio.h>
 

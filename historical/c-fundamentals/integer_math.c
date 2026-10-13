@@ -23,7 +23,7 @@ int get_integer() {
     int x;
     printf("Please enter an integer: \n");
     scanf("%d", &x);
-  return x; // STUB
+  return x;
 }
 
 
@@ -33,19 +33,14 @@ int get_integer() {
 
 */
 int add(int a, int b) {
-  return a + b; // STUB
+  return a + b;
 }
 
 
-/* Subtracts the integer b from the integer a
-
-   Returns the result.
-
-   The result may be negative
-
-*/
+/* Historical subtraction implementation returns b - a, the reverse of the
+   intended a - b operation. */
 int sub(int a, int b) {
-  return b - a; // STUB
+  return b - a;
 }
 
 
@@ -55,7 +50,7 @@ int sub(int a, int b) {
 
 */
 int mul(int a, int b) {
-  return a * b; // STUB
+  return a * b;
 }
 
 
@@ -71,7 +66,7 @@ int quot(int a, int b) {
         printf("Divisor = 0, result is undefined\n");
         return 0;
     }
-  return a / b; // STUB
+  return a / b;
 }
 
 
@@ -88,7 +83,7 @@ int rem(int a, int b) {
         return 0;
     }
     int r = a % b;
-  return r; // STUB
+  return r;
 }
 
 
@@ -112,8 +107,9 @@ int rem(int a, int b) {
 
    a = 5, b = 6: power(a, b) = 1 * 5 * 5 * 5 * 5 * 5 * 5 = 15625
 
-   This function must not call any other function. In particular, it
-   may not call pow(), log() nor exp().
+   Uses repeated multiplication instead of floating-point power functions.
+   Historical limitations: exponent 1 returns 1 and exponent 0 returns a;
+   these differ from the intended power calculation. Overflow is unchecked.
 
    An integer power of an integer is always integer if the exponent is 
    non-negative.
@@ -133,7 +129,7 @@ int power(int a, int b) {
         }
         return x;
     }
-  return x; // STUB
+  return x;
 }
 
 
@@ -153,7 +149,7 @@ int power(int a, int b) {
 
    * In the case c is '^': returns the power of a and b
 
-   * In the case c is any other character: returns 0
+   * In the case c is any other character: returns -1
 
    Calls add()   to compute the sum.
    Calls sub()   to compute the difference.
@@ -177,7 +173,7 @@ int operation(char c, int a, int b) {
     } else if(c == '^'){
         return power(a, b);
     }
-  return -1; // STUB
+  return -1;
 }
 
 
@@ -198,7 +194,7 @@ int is_valid_operation(char c) {
     if(c == '+' || c == '-' || c == '*' || c == '/' ||c == '%' || c =='^'){
         return 1;
     }
-  return 0; // STUB
+  return 0;
 }
 
 

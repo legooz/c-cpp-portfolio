@@ -1,10 +1,9 @@
-// CSCE A211
+// OpenGL Shapes Demo
 // Graphics Framework by Matthew Devins
 // This code uses OpenGL and demonstrates drawing some text and some
 // simple shapes, pixels, and color changes.
 //
-// To the reader: You only need to focus on the code in the "display" function
-// for now.
+// The display callback draws the scene.
 
 #include <GL/glut.h>
 #include <GL/gl.h>
@@ -64,13 +63,13 @@ void init()
     gluOrtho2D(screenx, screenx + WIDTH, screeny + HEIGHT, screeny);
 }
 
-/* For this lab you only need to work in this display function */
+/* Draw the square and its inscribed triangle. */
 void display()
 {
     // Clear the screen
     glClear(GL_COLOR_BUFFER_BIT);
 
-    // Lab 9: a 400-by-400 blue square with an inscribed yellow triangle.
+    // A 400-by-400 blue square with an inscribed yellow triangle.
     glBegin(GL_QUADS); // Use GL_LINE_LOOP for hollow
     glColor3f(0, 0, 1);
     glVertex2f(160, 40);

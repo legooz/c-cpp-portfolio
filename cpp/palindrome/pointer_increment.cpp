@@ -2,7 +2,7 @@
 #include <limits>
 #include <stdexcept>
 
-// Recovered from the commented-out Lab 7 part 1 in the archived source.
+// Increment the caller's integer through a pointer, rejecting null and overflow.
 void addOne(int* ptrNum) {
     if (ptrNum == nullptr) throw std::invalid_argument("Expected an integer pointer");
     if (*ptrNum == std::numeric_limits<int>::max()) throw std::overflow_error("Integer overflow");

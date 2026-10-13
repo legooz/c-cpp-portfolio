@@ -38,14 +38,8 @@ int main(int argc, char **argv) {
   }
     
     
-  /* The conversion made the string come out reversed, so reverse the string again. 
-
-     DO NOT USE A COPY OF THE STRING. DO NOT USE ANY LIBRARY FUNCTION
-     (no strlen or other !)
-
-  */
+  /* Reverse the generated bit string in place. */
   
-  /* TODO */
 char temp;
 
   for(t = 0; t < i / 2; ++t){

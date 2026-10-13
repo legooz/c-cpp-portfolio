@@ -23,7 +23,6 @@ int main(int argc, char **argv) {
   /* Check if the user string contains nothing but 0s and 1s */
   is_binary = 1;
 
-  /* TODO */
   int biLength = 0;
     for(i = 0; str[i] != '\0'; i++){
         biLength++;
@@ -35,11 +34,11 @@ int main(int argc, char **argv) {
   
   /* Proceed only of the string contains only 0s and 1s */
   if (is_binary) {
-    /* Convert the string of 0s and 1s to an integer number n */
+    /* Convert the bit string through a decimal-digit accumulator.
+       Historical limitation: the intermediate int can overflow on long inputs. */
     n = 0;
 
-    /* TODO */
-    
+
 
     
     

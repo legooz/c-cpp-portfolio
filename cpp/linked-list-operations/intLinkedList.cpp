@@ -75,7 +75,7 @@ void LinkedList::deleteSecond()
   }
 }
 
-void LinkedList::deleteFirst() // Implement the deleteFirst function
+void LinkedList::deleteFirst() // Remove the head node if the list is nonempty.
 {
     if(head != nullptr)
     {

@@ -6,7 +6,7 @@
 
 inline unsigned freshSeed() { return std::random_device{}(); }
 
-// Assignment demonstrations vary by default; an explicit seed enables replay.
+// Demonstrations vary by default; an explicit seed enables replay.
 inline unsigned seedFromArguments(int argc, char** argv) {
     if (argc == 1) return freshSeed();
     if (argc != 2) throw std::invalid_argument("Expected at most one unsigned seed");

@@ -1,5 +1,4 @@
 /******************************************
-* CSCE A201
 * Binary Table
 * 9 - 8 - 2022
 * Description: This program determines the binary numbers of a decimal number.

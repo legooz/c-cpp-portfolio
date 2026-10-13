@@ -63,7 +63,7 @@ GCC/Clang builds treat `-Wall -Wextra -Wpedantic` warnings as errors. CI runs no
 # Request four resource counts for process 2; grant only if safe.
 ./build/bankers --request 2 1 0 2 0 < examples/bankers-safe.txt
 
-# Original MPI assignment: eight million values broadcast to eight ranks.
+# Eight-rank broadcast reduction over eight million values.
 mpirun -n 8 ./build/mpi_minimum --assignment 42
 
 # Uneven distribution across three MPI ranks; the minimum is -100.

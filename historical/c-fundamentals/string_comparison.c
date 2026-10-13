@@ -29,51 +29,9 @@ int main(int argc, char **argv) {
   } 
   str2[i] = '\0';
 
-  /* Compare the two strings:
-
-     If str1 figures in a dictionary before str2, set comp to -1.
-     If str1 is equal to str2, set comp to 0.
-     If str1 figures in a dictionary after str2, set comp to 1.
-
-     You must not use any function out of string.h. So no strcmp, no strlen!
-
-     Caution: the strings may have different length! If two strings
-     differ in length but are the same for the length of the shorter one, 
-     the shorter one sorts in a dictionary before the longer one. Check
-     your code e.g. with "Hello" and "Hell" for this case.
-
-     Try with:
-
-     * "a" and "b"
-     * "a" and "a"
-     * "b" and "a"
-     * "Hello" and "Hallo"
-     * "Hello" and "Hello"
-     * "Hell" and "Hello"
-     * "" and ""
-     * "" and "Hello"
-     * "hello" and "Hello"
-     
-     etc.
-
-     Uppercase and lowercase letters are treated as different letters,
-     all uppercase letter sort before the lowercase letters. Therefore
-     "Z" sorts before "a" and "Hello" before "hello".
-
-     Start by figuring out a loop (while loop) that 
-     goes over each character in both strings and stops 
-     whenever the shorter of the string is finished.
-
-     String ends are marked in C witb the ASCII null character '\0'.
-
-     Finally, figure out the problem of two strings of the different length
-     which are identical in the length of the shorter of them, such as 
-     "Hell" and "Hello". This will give you a if-else-if sequence *after* your
-     loop.
-
-     You are allowed to use break statements.
-
-  */
+  /* Compare characters lexicographically, treating a shorter matching prefix
+     as smaller. Historical limitation: if either input is empty, comp remains
+     uninitialized because the comparison loop never runs. */
     i = 0;
     while(str1[i] != '\0' && str2[i] != '\0'){
 

@@ -5,7 +5,7 @@
 #include <memory>
 #include <stdexcept>
 
-// Lab 7's pointer-and-length interface. The caller supplies length accessible bytes.
+// Pointer-and-length interface: the caller supplies length accessible bytes.
 bool isPalindrome(char* p, int length) {
     if (length < 0 || (p == nullptr && length != 0))
         throw std::invalid_argument("Invalid character range");

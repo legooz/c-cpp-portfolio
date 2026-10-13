@@ -18,11 +18,7 @@ void selectionSort(int a[], int startIndex, int endIndex)
         return;
 
     int indexOfMin = startIndex;
-    // Write code below that finds the index of the smallest value in the array from
-    // startIndex +1   to  endIndex,  inclusive.
-    // The variable indexOfMin should contain the index of this position.  For example, if
-    // startIndex=3, endIndex=7, then if the smallest value in the array from a[4],a[5],a[6], and a[7]
-    // is at index 5, then indexOfMin should get set to 5
+    // Find the minimum element in the inclusive unsorted range.
 
     for(int i = startIndex; i <= endIndex; i++)
     {
@@ -33,14 +29,13 @@ void selectionSort(int a[], int startIndex, int endIndex)
     }
 
     // Once indexOfMin is found, swap the values in the array at indexOfMin and startIndex
-    swap(a[indexOfMin], a[startIndex]);  // You have to write the swap function. See lecture notes.
+    swap(a[indexOfMin], a[startIndex]);  // Move the minimum to the front of the range.
 
-    // Complete the recursive call below so it only sorts the array from startIndex+1 to endIndex
+    // Recursively sort the remaining suffix.
     selectionSort(a, startIndex + 1, endIndex);
 }
 
-// Write the swap function so it swaps integers x and y by reference
-// See lecture notes
+// Swap two integers by reference.
 
 void swap(int &x, int &y)
 {
@@ -49,7 +44,7 @@ void swap(int &x, int &y)
     y = spaceHolder;
 }
 
-// Write the main function with a test case of selectionSort
+// Demonstrate sorting two integer arrays.
 int main()
 {
 

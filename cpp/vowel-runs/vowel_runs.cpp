@@ -5,7 +5,7 @@
 #include <iostream>
 #include <stdexcept>
 
-constexpr std::size_t word_capacity = 14; // Handout: longest word is 13 characters.
+constexpr std::size_t word_capacity = 14; // Longest accepted word is 13 characters.
 
 bool vowelCheck(char ch) {
     const int lower = std::tolower(static_cast<unsigned char>(ch));
