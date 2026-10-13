@@ -1,8 +1,6 @@
 /******************************************************************************
 * CSCE A201
-* Lars Goozen
-* Assignment 1
-* Problem 4b
+* Temperature Equality Search
 * 9-8-2022
 * 
 * Purpose: by brute force using a loop to find the tempature at which celsius and fahrenheit are 

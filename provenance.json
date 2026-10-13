@@ -28,7 +28,7 @@
     {
       "source": "2023/spring/programming-ii/assignment3-problem1/Main.cpp",
       "cell": null,
-      "destination": "cpp/pair-operators/Main.cpp",
+      "destination": "cpp/pair-operators/pair_demo.cpp",
       "extracted_text_sha256": "ac96118df008f9dd473c71d494c192037be94111b65b11dbb17f58e12f5ab3c2",
       "source_file_sha256": "b0ea350c0149233e8d1a4778a9096dde54b251745d86710cb693137a8a19334b",
       "published_sha256": "b0d2f7cb213a09f128a2908d513a382f38ca7a4f69b695a29299c06b8386fad4"
@@ -76,7 +76,7 @@
     {
       "source": "2023/spring/programming-ii/assignment3-problem3/Main.cpp",
       "cell": null,
-      "destination": "cpp/movie-sort/Main.cpp",
+      "destination": "cpp/movie-sort/movie_sort_demo.cpp",
       "extracted_text_sha256": "49cd17342d9ad6b95d8f86888a25c51bfea41364cb4c4ac19e779ec5271fa4f2",
       "source_file_sha256": "dba9afabc1b6bab26af077d0838bf73a0f95880a6c6b1d62147e0bcfb1fe5371",
       "published_sha256": "475bf9a42b905bfbe147147ad246e07e066353840fff1fdb11de088f77dc6d9e"
@@ -100,7 +100,7 @@
     {
       "source": "2023/spring/programming-ii/assignment3-problem4/Source.cpp",
       "cell": null,
-      "destination": "cpp/leading-digits/Source.cpp",
+      "destination": "cpp/leading-digits/leading_digits.cpp",
       "extracted_text_sha256": "83e09a02ad7ec2cae6b3c42d6e515bd4c84ecb35a143351f79db647b5049b71c",
       "source_file_sha256": "83e09a02ad7ec2cae6b3c42d6e515bd4c84ecb35a143351f79db647b5049b71c",
       "published_sha256": "886aac2118a9eed2eadefecc386da7386e47b820b6d7e008dacf6a868512206e"
@@ -108,7 +108,7 @@
     {
       "source": "2023/spring/programming-ii/assignment3-problem5/Main.cpp",
       "cell": null,
-      "destination": "cpp/maze-class/Main.cpp",
+      "destination": "cpp/maze-class/maze_demo.cpp",
       "extracted_text_sha256": "b12f9356cf0fe2819209f90431228b9d819c93a084e604001f8a05dac2d4cccb",
       "source_file_sha256": "e43a065cda6c4e5dcbcabc7d4afcab22daec1799fd4b163fdcc716ea216d2cce",
       "published_sha256": "f471eb32845380a1955624f5c253c78e0b4f82a2497890bd171c9afd8bdb4674"
@@ -132,7 +132,7 @@
     {
       "source": "2023/spring/programming-ii/lab04/lab4.cpp",
       "cell": null,
-      "destination": "cpp/selection-sort/lab4.cpp",
+      "destination": "cpp/selection-sort/selection_sort.cpp",
       "extracted_text_sha256": "f29334db5c3a087b3ecf6ef7b74056d77a4337eeadb0246110053ff949151ec6",
       "source_file_sha256": "0b1bcdf5d9486185d1c098d505305c2e3218fedae93a2676f7159b88dd94b639",
       "published_sha256": "b7687e6d3866585222857cc5cd34e8681591f8b81d4af3a68e28a2b980d1a844"
@@ -140,7 +140,7 @@
     {
       "source": "2023/spring/programming-ii/lab05/Source.cpp",
       "cell": null,
-      "destination": "cpp/vowel-runs/Source.cpp",
+      "destination": "cpp/vowel-runs/vowel_runs.cpp",
       "extracted_text_sha256": "30545913a7e4b07679f9c22297779bd83a8775869c745e72814a9e0a2cd5323a",
       "source_file_sha256": "163893934e1a8694b228586731eeb911b948ab14b4f4daa6e856c592da3f87bb",
       "published_sha256": "a68677939041b1115386dbd494a64f6c541a13f6e43688747846edd98619b965"
@@ -148,7 +148,7 @@
     {
       "source": "2023/spring/programming-ii/lab06/lab06.cpp",
       "cell": null,
-      "destination": "cpp/recursive-sorted/lab06.cpp",
+      "destination": "cpp/recursive-sorted/recursive_sorted.cpp",
       "extracted_text_sha256": "8f21d6f97f6c2d93657d8f39b8ce586f0cbe776ea53c968aa54717434f224f09",
       "source_file_sha256": "75502647ff544a815b797f13fb100e1f5e8c402b2165c4054e5b54ff42703302",
       "published_sha256": "db76c803cdc16f4fcc4e0e565de04a9a7fe39b85dd56bc943681e265428565f8"
@@ -156,7 +156,7 @@
     {
       "source": "2023/spring/programming-ii/lab07/lab07.cpp",
       "cell": null,
-      "destination": "cpp/palindrome/lab07.cpp",
+      "destination": "cpp/palindrome/palindrome.cpp",
       "extracted_text_sha256": "85b80705ca08b4cccc9adf8e6e1cd2c122508e72bcf4e579836319b8ec03b725",
       "source_file_sha256": "cf122316f62ccda9beafd1f0e89b2e2b22ff02334ae3ac288c4493149a1ca924",
       "published_sha256": "5097aeeb030cead5bb9c21c94d8ff15bd92fcbfd085b8cdda7ba71b212a5a52f"
@@ -164,15 +164,15 @@
     {
       "source": "2023/spring/programming-ii/lab09-opengl/goozen_lab09.cpp",
       "cell": null,
-      "destination": "cpp/opengl-shapes/goozen_lab09.cpp",
+      "destination": "cpp/opengl-shapes/opengl_shapes.cpp",
       "extracted_text_sha256": "03fa631e3b5df566af979ab7d1d4684b36ff85ae32bffc39fa229ccdf0d2afaa",
       "source_file_sha256": "93aa2739feb8b698e7105c7eb405cf8b87ffc4e68f5bb16a4e229c94b63a7056",
-      "published_sha256": "392bbd65be2463d19e128c97b992cd555311b30549337dd47f607b7bce84551c"
+      "published_sha256": "1af8b8d2a42056d1c84b539fa365daf6a3808204d4b7db7f17b6a0f165323b8e"
     },
     {
       "source": "2023/spring/programming-ii/lab14/goozen_lab14.cpp",
       "cell": null,
-      "destination": "cpp/hamming-distance/goozen_lab14.cpp",
+      "destination": "cpp/hamming-distance/hamming_distance.cpp",
       "extracted_text_sha256": "93367490a2fda7c1b27804f949e8fd2b07caa4689ddaac5d9b88f7cbbec2862a",
       "source_file_sha256": "7de3f8f4bb5a0681765163d6a63e15715d7296180f19cc7a84b42c3bb1e2b060",
       "published_sha256": "60e563bd75d88e3b76d3cc70372925c9bc9c53fa658130a7eb7bcda49f349c8f"
@@ -308,7 +308,7 @@
     {
       "source": "2024/spring/algorithms-and-data-structures/queues.ipynb",
       "cell": 2,
-      "destination": "cpp/queues/queueMain.cpp",
+      "destination": "cpp/queues/queue_demo.cpp",
       "extracted_text_sha256": "ed94070b7a4446ad303c6592f2c5f79999708cdd5e49cf6640c128cf41c8660b",
       "source_file_sha256": "dd22e1e9afe8ad3986cc46228fa5953274db38165f241cab75a5f4cc591d1020",
       "published_sha256": "eaaeb9de51177c1f6d7407eea47885d7d54c374ba39b11e66bdccf6146ef4b0a"
@@ -316,7 +316,7 @@
     {
       "source": "2024/spring/algorithms-and-data-structures/tree-traversal.ipynb",
       "cell": 4,
-      "destination": "cpp/tree-traversal/mainTest.cpp",
+      "destination": "cpp/tree-traversal/tree_traversal.cpp",
       "extracted_text_sha256": "36b7381931ad8f304ac83dbd46b34810b9e6bafeb67ba39176dae853e99b4dc0",
       "source_file_sha256": "51f76800a19d18c89753bd702f5081aa89886e5a4990914fa015a763c46e8464",
       "published_sha256": "3677df5ce49456eff1b611c51dd6be9a9e3d8745fc75041318e4514af63f182f"
@@ -334,14 +334,14 @@
   "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based.",
   "historical_recovery": {
     "date": "2026-10-12",
-    "policy": "Original source preserved except identifier redaction/encoding. Historical programs are separate from curated targets.",
+    "policy": "Historical implementation logic preserved. Identifier redaction, text normalization and subsequent naming/banner cleanup are recorded in this manifest.",
     "files": [
       {
         "source_file": "arithmetic.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "897458bf957305f24e8cc7270c5f41b0af89412291d29179255ac827d4de97a9",
-        "destination": "historical/c-2021/arithmetic.c",
-        "published_sha256": "f30acecefdfb1ece9df248157d0c403492bcd4c2c5ca768c071552bbc3006c89",
+        "destination": "historical/c-fundamentals/decimal_string_addition.c",
+        "published_sha256": "9ec45cf63f6f5135ba84278214e32a6d3df14b200fd2f51516f026b923a6fc06",
         "topic": "arithmetic",
         "transformations": [
           "Removed student identifier and/or normalized text encoding."
@@ -352,7 +352,7 @@
         "source_file": "arrays.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "b9c011aeefd9a73b213958c8417c94d6d5aaffb612dbda6f468925f541c2322e",
-        "destination": "historical/c-2021/arrays.c",
+        "destination": "historical/c-fundamentals/sentinel_arrays.c",
         "published_sha256": "b9c011aeefd9a73b213958c8417c94d6d5aaffb612dbda6f468925f541c2322e",
         "topic": "arrays",
         "transformations": [],
@@ -362,7 +362,7 @@
         "source_file": "basic.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "59a84b91f1ffb6a3d758d441d31eb582c37195ed0bdb16b19c65ff152c815f45",
-        "destination": "historical/c-2021/basic.c",
+        "destination": "historical/c-fundamentals/integer_math.c",
         "published_sha256": "59a84b91f1ffb6a3d758d441d31eb582c37195ed0bdb16b19c65ff152c815f45",
         "topic": "basic",
         "transformations": [],
@@ -372,7 +372,7 @@
         "source_file": "comparing_strings.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "07553c724bfa4f1db38ccba05a997213051c58b3b3d318917653fcfcef5d2054",
-        "destination": "historical/c-2021/comparing_strings.c",
+        "destination": "historical/c-fundamentals/string_comparison.c",
         "published_sha256": "07553c724bfa4f1db38ccba05a997213051c58b3b3d318917653fcfcef5d2054",
         "topic": "comparing strings",
         "transformations": [],
@@ -382,7 +382,7 @@
         "source_file": "conversion_from_binary.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "1084fddebf8138fb491782405f3124ed507b19fe0fd3e0e1714dc5d2639aa95a",
-        "destination": "historical/c-2021/conversion_from_binary.c",
+        "destination": "historical/c-fundamentals/binary_to_decimal.c",
         "published_sha256": "1084fddebf8138fb491782405f3124ed507b19fe0fd3e0e1714dc5d2639aa95a",
         "topic": "conversion from binary",
         "transformations": [],
@@ -392,7 +392,7 @@
         "source_file": "conversion_to_binary.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "992231e7748278814ae131f768257f43a6b7e1199553d4a55bd8be4b689c46eb",
-        "destination": "historical/c-2021/conversion_to_binary.c",
+        "destination": "historical/c-fundamentals/decimal_to_binary.c",
         "published_sha256": "992231e7748278814ae131f768257f43a6b7e1199553d4a55bd8be4b689c46eb",
         "topic": "conversion to binary",
         "transformations": [],
@@ -402,7 +402,7 @@
         "source_file": "strings.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "2ee8942f179802e49a33a375b9388aaa0d1c409924ca03c9cb43912e820a4a38",
-        "destination": "historical/c-2021/strings.c",
+        "destination": "historical/c-fundamentals/string_functions.c",
         "published_sha256": "2ee8942f179802e49a33a375b9388aaa0d1c409924ca03c9cb43912e820a4a38",
         "topic": "strings",
         "transformations": [],
@@ -412,7 +412,7 @@
         "source_file": "substring.c",
         "course": "CSCE A201, Fall 2021",
         "source_sha256": "95f475c824165a8cbf46e2806891f326b6bd27c809522e29671d287898efcde9",
-        "destination": "historical/c-2021/substring.c",
+        "destination": "historical/c-fundamentals/substring_search.c",
         "published_sha256": "95f475c824165a8cbf46e2806891f326b6bd27c809522e29671d287898efcde9",
         "topic": "substring",
         "transformations": [],
@@ -422,8 +422,8 @@
         "source_file": "main.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "2df89be3ac5137cfae47cf6a16dda01adb79a27f79a1284ae7391ee68d90d24d",
-        "destination": "historical/c-2022/math-library/main.c",
-        "published_sha256": "2df89be3ac5137cfae47cf6a16dda01adb79a27f79a1284ae7391ee68d90d24d",
+        "destination": "historical/c-experiments/math-library/main.c",
+        "published_sha256": "c6fbd5fc7a7eacadd276a452da64dbe5bc7ef81b154a1b439371c79468973b67",
         "topic": "multi-file math library",
         "transformations": [],
         "notes": "Historical student coursework; existing comments and course scaffolding retained."
@@ -432,7 +432,7 @@
         "source_file": "userMathLib.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "2bb7ecc4b445ba2f11269fc11780cbd76a772848103e4f14b60b735cb149ac2b",
-        "destination": "historical/c-2022/math-library/userMathLib.c",
+        "destination": "historical/c-experiments/math-library/userMathLib.c",
         "published_sha256": "2bb7ecc4b445ba2f11269fc11780cbd76a772848103e4f14b60b735cb149ac2b",
         "topic": "multi-file math library",
         "transformations": [],
@@ -442,7 +442,7 @@
         "source_file": "userMathLib.h",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "761827c25b9d640012f13a74aa22433049bccc2d3b4f45582d01497210a14a2b",
-        "destination": "historical/c-2022/math-library/userMathLib.h",
+        "destination": "historical/c-experiments/math-library/userMathLib.h",
         "published_sha256": "761827c25b9d640012f13a74aa22433049bccc2d3b4f45582d01497210a14a2b",
         "topic": "multi-file math library",
         "transformations": [],
@@ -452,8 +452,8 @@
         "source_file": "goozen_problem_2.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "6e73162af8eb43e28d7408f7f0540e724558c89f76e5c6109de4f873796f4a53",
-        "destination": "historical/c-2022/binary-range/goozen_problem_2.c",
-        "published_sha256": "6e73162af8eb43e28d7408f7f0540e724558c89f76e5c6109de4f873796f4a53",
+        "destination": "historical/c-experiments/binary-range/binary_table.c",
+        "published_sha256": "e79acd60fa264f3d48f60de539d5a8fa01f43e7efa541a41ee0c72c57b72b997",
         "topic": "binary table",
         "transformations": [],
         "notes": "Historical student coursework; existing comments and course scaffolding retained."
@@ -462,8 +462,8 @@
         "source_file": "goozen_problem_3.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "a4831bf2da4197db778cea9bdaacadb820207fff5f18fd143dd242fef8b19ac2",
-        "destination": "historical/c-2022/temperature-conversion/goozen_problem_3.c",
-        "published_sha256": "a4831bf2da4197db778cea9bdaacadb820207fff5f18fd143dd242fef8b19ac2",
+        "destination": "historical/c-experiments/temperature-conversion/temperature_conversion.c",
+        "published_sha256": "2f262ed9d6aa8a84174e059b0c6943ef342423d89bad7048256b1c3c690c3481",
         "topic": "temperature conversion",
         "transformations": [],
         "notes": "Historical student coursework; existing comments and course scaffolding retained."
@@ -472,8 +472,8 @@
         "source_file": "goozen_problem4b.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "571490076a825f9344fac19729c936739cf28169b02728dff660a2572e4ff121",
-        "destination": "historical/c-2022/temperature-equality/goozen_problem4b.c",
-        "published_sha256": "571490076a825f9344fac19729c936739cf28169b02728dff660a2572e4ff121",
+        "destination": "historical/c-experiments/temperature-equality/temperature_equality.c",
+        "published_sha256": "8b03cd5ad641f44a2e30309f2c528c0d3e9a95df2417e6e6c6e798677d2ce1b4",
         "topic": "temperature equality search",
         "transformations": [],
         "notes": "Historical student coursework; existing comments and course scaffolding retained."
@@ -482,8 +482,8 @@
         "source_file": "goozen_problem5.c",
         "course": "CSCE A201, Fall 2022",
         "source_sha256": "28fcdfa2383c5f1ac62425bd53660e8e05d45bc4460676a16569b8b1840e6370",
-        "destination": "historical/c-2022/monty-hall/goozen_problem5.c",
-        "published_sha256": "28fcdfa2383c5f1ac62425bd53660e8e05d45bc4460676a16569b8b1840e6370",
+        "destination": "historical/c-experiments/monty-hall/monty_hall.c",
+        "published_sha256": "b5b093bc9dfaa9dad813e6e3cc1a4278676fc5802e419b9f9b58c2712ac85473",
         "topic": "Monty Hall simulation",
         "transformations": [],
         "notes": "Historical student coursework; existing comments and course scaffolding retained."
@@ -492,7 +492,7 @@
         "source_file": "goozen_problem4.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "42baf0633df8f7ee8c0a81fad4b1d3e06d1e99d8816d6a1ff9f47b0951637961",
-        "destination": "historical/cpp-2023/coin-change/main.cpp",
+        "destination": "historical/cpp-fundamentals/coin-change/main.cpp",
         "published_sha256": "47b7c33c5199989d0f0e24026aa73340c47dffe5c020dfefa470ff00975d3952",
         "topic": "coin change via reference parameters",
         "transformations": [
@@ -504,7 +504,7 @@
         "source_file": "LinkedList.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "c425798e005ecfc2b7c4a87f83bcdb16cfbce554be24fce4d4f2304733c50618",
-        "destination": "historical/cpp-2023/linked-list-lab/LinkedList.cpp",
+        "destination": "historical/cpp-fundamentals/linked-list-editor/LinkedList.cpp",
         "published_sha256": "46385074f6f61a84ea56af1baea78a9413abf9b8e42af9cc0716d9da1f55a243",
         "topic": "linked list editing and removal",
         "transformations": [
@@ -516,7 +516,7 @@
         "source_file": "LinkedList.h",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "2130b2b9a46d38e26ceef8d543f4ab08aa32b10b60cf9fc190f42e3fe4a1cda6",
-        "destination": "historical/cpp-2023/linked-list-lab/LinkedList.h",
+        "destination": "historical/cpp-fundamentals/linked-list-editor/LinkedList.h",
         "published_sha256": "9d26a4f2d74a575fe1f8aefa43088195708881950298649c5677afc1e75207d4",
         "topic": "linked list editing and removal",
         "transformations": [
@@ -528,7 +528,7 @@
         "source_file": "main.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "6f26e94c6237e2abdccbedf797426b4e70c6c6a9c264282fef6879f75e931d0f",
-        "destination": "historical/cpp-2023/linked-list-lab/main.cpp",
+        "destination": "historical/cpp-fundamentals/linked-list-editor/main.cpp",
         "published_sha256": "6a4dd3b19e1670b270ee3e5293590aa9c3c0c5dd86f90ee756513f106c3e34e4",
         "topic": "linked list editing and removal",
         "transformations": [
@@ -540,7 +540,7 @@
         "source_file": "Node.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "0b987061bef00f7e767b366fa840da8b91243248bda968a3896047d22b3ecab2",
-        "destination": "historical/cpp-2023/linked-list-lab/Node.cpp",
+        "destination": "historical/cpp-fundamentals/linked-list-editor/Node.cpp",
         "published_sha256": "733eb1def90cddb2f384184608c7baf3f387c789517ad5deb354d9b1ecba467c",
         "topic": "linked list editing and removal",
         "transformations": [
@@ -552,7 +552,7 @@
         "source_file": "Node.h",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "396833aea9eed2c54b1ebaf744904821b87b0c0cf5d0f25c438ce7834ee370e6",
-        "destination": "historical/cpp-2023/linked-list-lab/Node.h",
+        "destination": "historical/cpp-fundamentals/linked-list-editor/Node.h",
         "published_sha256": "d602fa1efe5f59a1df3c68bee4578a33a196f5d8b3795ef4e9ff6458549359e3",
         "topic": "linked list editing and removal",
         "transformations": [
@@ -564,7 +564,7 @@
         "source_file": "main.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "fb41c9946b6aebcd30b7f4b8c024eb2edc90d5e64e9f1b8066a59523ed485a53",
-        "destination": "historical/cpp-2023/josephus/main.cpp",
+        "destination": "historical/cpp-fundamentals/josephus/main.cpp",
         "published_sha256": "5a5be4cb2d968fd80568d2d32ab540273600077bb7abc605b8646a9a6205c6a0",
         "topic": "Josephus circular linked list",
         "transformations": [
@@ -576,7 +576,7 @@
         "source_file": "Prisoner.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "7a7b3088cb4c299d8b6f66aa29dfe8eab9ff56ba509be2338994551a8e5f44e1",
-        "destination": "historical/cpp-2023/josephus/Prisoner.cpp",
+        "destination": "historical/cpp-fundamentals/josephus/Prisoner.cpp",
         "published_sha256": "f4561694e86ef5720ccd5a08501a8af60a39da557e628e4f695f0227cdaee16e",
         "topic": "Josephus circular linked list",
         "transformations": [
@@ -588,7 +588,7 @@
         "source_file": "Prisoner.h",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "dc6aa0d97047fc585266f7cbda1ccce9fe2599a9b6ca76d36fdd724604e73d9b",
-        "destination": "historical/cpp-2023/josephus/Prisoner.h",
+        "destination": "historical/cpp-fundamentals/josephus/Prisoner.h",
         "published_sha256": "62f8c136e13c134eb911a4025836fea1075b562214e9ff3ca7eb77358fc86561",
         "topic": "Josephus circular linked list",
         "transformations": [
@@ -600,7 +600,7 @@
         "source_file": "CheckedArray.h",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "f903cb1860052683315ddc1a5a77c978c67e2e33181d9545e8061bb41cbfdc1a",
-        "destination": "historical/cpp-2023/checked-array/CheckedArray.h",
+        "destination": "historical/cpp-fundamentals/checked-array/CheckedArray.h",
         "published_sha256": "b2647f31e85c67a2de5f901593deb28d5ca404bc9873e83dff212f46c5f715a6",
         "topic": "templates and bounds exceptions",
         "transformations": [
@@ -612,7 +612,7 @@
         "source_file": "main.cpp",
         "course": "CSCE A211, Spring 2023",
         "source_sha256": "2b2d7074577d518e509f5cb585396e72d4ae39c6ca098c13c81e46c2af5fee9f",
-        "destination": "historical/cpp-2023/checked-array/main.cpp",
+        "destination": "historical/cpp-fundamentals/checked-array/main.cpp",
         "published_sha256": "d2d91b770c6f1fbab5e0c165d7b86d4ce7c29aa7485e6f00f1fb34fdbbbdfd8e",
         "topic": "templates and bounds exceptions",
         "transformations": [
@@ -621,5 +621,9 @@
         "notes": "Historical student coursework; existing comments and course scaffolding retained."
       }
     ]
+  },
+  "naming_cleanup": {
+    "date": "2026-10-13",
+    "changes": "Replaced legacy submission filenames and chronological grouping folders with descriptive project names; centralized repeated sole-author banners in NOTICE.md. Preserved original-source labels and hashes. Algorithms unchanged; OpenGL window title made descriptive."
   }
 }

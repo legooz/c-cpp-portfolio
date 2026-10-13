@@ -19,7 +19,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/vowel-runs/Source.cpp"
+#include "../cpp/vowel-runs/vowel_runs.cpp"
 #undef main
 
 int main() {

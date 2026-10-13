@@ -1,8 +1,6 @@
 /******************************************
 * CSCE A201
-* Lars Goozen
-* Assignment 1
-* Problem 2
+* Binary Table
 * 9 - 8 - 2022
 * Description: This program determines the binary numbers of a decimal number.
 ******************************************/

@@ -1,8 +1,6 @@
 /******************************************
 * CSCE A201
-* Lars Goozen
-* Assignment 1
-* Program 3
+* Fahrenheit to Celsius Conversion
 * 9 - 8 - 2022
 * Purpose: Convert a Fahrenheit Temp to Celsius
 ******************************************/

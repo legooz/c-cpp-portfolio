@@ -18,7 +18,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/selection-sort/lab4.cpp"
+#include "../cpp/selection-sort/selection_sort.cpp"
 #undef main
 
 int main() {

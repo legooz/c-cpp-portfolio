@@ -18,7 +18,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/hamming-distance/goozen_lab14.cpp"
+#include "../cpp/hamming-distance/hamming_distance.cpp"
 #undef main
 
 int main() {

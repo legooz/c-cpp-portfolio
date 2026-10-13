@@ -2,7 +2,7 @@
 
 [![Build and test](https://github.com/legooz/c-cpp-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/legooz/c-cpp-portfolio/actions/workflows/ci.yml)
 
-**Lars Goozen · C11 · C++17 · Linux / WSL**
+**C11 · C++17 · Linux / WSL**
 
 A collection of 29 reviewed small programs: 28 recovered from 2023–2025 coursework (including a commented-out pointer exercise), plus a missing lab exercise implemented during the September 2026 review. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. These programs build independently through one CMake project.
 

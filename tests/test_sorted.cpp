@@ -18,7 +18,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/recursive-sorted/lab06.cpp"
+#include "../cpp/recursive-sorted/recursive_sorted.cpp"
 #undef main
 
 int main() {

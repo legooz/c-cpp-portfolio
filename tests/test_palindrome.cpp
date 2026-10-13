@@ -19,7 +19,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/palindrome/lab07.cpp"
+#include "../cpp/palindrome/palindrome.cpp"
 #undef main
 
 int main() {

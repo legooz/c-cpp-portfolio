@@ -18,7 +18,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/leading-digits/Source.cpp"
+#include "../cpp/leading-digits/leading_digits.cpp"
 #undef main
 
 int main() {

@@ -1,8 +1,6 @@
 /******************************************************************************
 * CSCE A201
-* Lars Goozen
-* Assignment 1
-* Problem 5
+* Monty Hall Simulation
 * 9-8-2022
 * 
 * Purpose: Finding the probability of winning a game show based on the options given.

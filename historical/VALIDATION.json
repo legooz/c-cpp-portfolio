@@ -6,7 +6,7 @@
     {
       "program": "arithmetic",
       "sources": [
-        "historical/c-2021/arithmetic.c"
+        "historical/c-fundamentals/decimal_string_addition.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -16,7 +16,7 @@
     {
       "program": "arrays",
       "sources": [
-        "historical/c-2021/arrays.c"
+        "historical/c-fundamentals/sentinel_arrays.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -26,7 +26,7 @@
     {
       "program": "basic",
       "sources": [
-        "historical/c-2021/basic.c"
+        "historical/c-fundamentals/integer_math.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -36,7 +36,7 @@
     {
       "program": "comparing_strings",
       "sources": [
-        "historical/c-2021/comparing_strings.c"
+        "historical/c-fundamentals/string_comparison.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -52,7 +52,7 @@
     {
       "program": "conversion_from_binary",
       "sources": [
-        "historical/c-2021/conversion_from_binary.c"
+        "historical/c-fundamentals/binary_to_decimal.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -68,7 +68,7 @@
     {
       "program": "conversion_to_binary",
       "sources": [
-        "historical/c-2021/conversion_to_binary.c"
+        "historical/c-fundamentals/decimal_to_binary.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -84,7 +84,7 @@
     {
       "program": "strings",
       "sources": [
-        "historical/c-2021/strings.c"
+        "historical/c-fundamentals/string_functions.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -94,7 +94,7 @@
     {
       "program": "substring",
       "sources": [
-        "historical/c-2021/substring.c"
+        "historical/c-fundamentals/substring_search.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -110,7 +110,7 @@
     {
       "program": "binary-range",
       "sources": [
-        "historical/c-2022/binary-range/goozen_problem_2.c"
+        "historical/c-experiments/binary-range/binary_table.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -126,8 +126,8 @@
     {
       "program": "math-library",
       "sources": [
-        "historical/c-2022/math-library/main.c",
-        "historical/c-2022/math-library/userMathLib.c"
+        "historical/c-experiments/math-library/main.c",
+        "historical/c-experiments/math-library/userMathLib.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -143,7 +143,7 @@
     {
       "program": "monty-hall",
       "sources": [
-        "historical/c-2022/monty-hall/goozen_problem5.c"
+        "historical/c-experiments/monty-hall/monty_hall.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -159,7 +159,7 @@
     {
       "program": "temperature-conversion",
       "sources": [
-        "historical/c-2022/temperature-conversion/goozen_problem_3.c"
+        "historical/c-experiments/temperature-conversion/temperature_conversion.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -175,7 +175,7 @@
     {
       "program": "temperature-equality",
       "sources": [
-        "historical/c-2022/temperature-equality/goozen_problem4b.c"
+        "historical/c-experiments/temperature-equality/temperature_equality.c"
       ],
       "compiler": "gcc",
       "standard": "c11",
@@ -191,7 +191,7 @@
     {
       "program": "checked-array",
       "sources": [
-        "historical/cpp-2023/checked-array/main.cpp"
+        "historical/cpp-fundamentals/checked-array/main.cpp"
       ],
       "compiler": "g++",
       "standard": "c++14",
@@ -207,7 +207,7 @@
     {
       "program": "coin-change",
       "sources": [
-        "historical/cpp-2023/coin-change/main.cpp"
+        "historical/cpp-fundamentals/coin-change/main.cpp"
       ],
       "compiler": "g++",
       "standard": "c++17",
@@ -223,8 +223,8 @@
     {
       "program": "josephus",
       "sources": [
-        "historical/cpp-2023/josephus/main.cpp",
-        "historical/cpp-2023/josephus/Prisoner.cpp"
+        "historical/cpp-fundamentals/josephus/main.cpp",
+        "historical/cpp-fundamentals/josephus/Prisoner.cpp"
       ],
       "compiler": "g++",
       "standard": "c++17",
@@ -238,11 +238,11 @@
       "compiler_warning_count": 0
     },
     {
-      "program": "linked-list-lab",
+      "program": "linked-list-editor",
       "sources": [
-        "historical/cpp-2023/linked-list-lab/LinkedList.cpp",
-        "historical/cpp-2023/linked-list-lab/main.cpp",
-        "historical/cpp-2023/linked-list-lab/Node.cpp"
+        "historical/cpp-fundamentals/linked-list-editor/LinkedList.cpp",
+        "historical/cpp-fundamentals/linked-list-editor/main.cpp",
+        "historical/cpp-fundamentals/linked-list-editor/Node.cpp"
       ],
       "compiler": "g++",
       "standard": "c++17",

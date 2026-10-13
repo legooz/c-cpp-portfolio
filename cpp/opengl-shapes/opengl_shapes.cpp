@@ -41,7 +41,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_MULTISAMPLE | GLUT_DEPTH);
     glutInitWindowSize(WIDTH, HEIGHT);
     glutInitWindowPosition(0, 0);
-    glutCreateWindow("Just A Window");
+    glutCreateWindow("OpenGL Shapes Demo");
 
     init();
     glutDisplayFunc(display);

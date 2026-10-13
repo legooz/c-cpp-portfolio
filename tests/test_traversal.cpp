@@ -18,7 +18,7 @@ template<class Exception, class Function> void expectThrow(Function operation) {
 }
 
 #define main demo_main_0
-#include "../cpp/tree-traversal/mainTest.cpp"
+#include "../cpp/tree-traversal/tree_traversal.cpp"
 #undef main
 
 int main() {
