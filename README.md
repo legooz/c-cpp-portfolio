@@ -4,7 +4,9 @@
 
 **Lars Goozen · C11 · C++17 · Linux / WSL**
 
-A collection of 29 small programs: 28 recovered from 2023–2025 coursework (including a commented-out pointer exercise), plus a missing lab exercise implemented during the September 2026 review. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. Each program builds independently through one CMake project.
+A collection of 29 reviewed small programs: 28 recovered from 2023–2025 coursework (including a commented-out pointer exercise), plus a missing lab exercise implemented during the September 2026 review. The examples cover resource-allocation safety, parallel reduction, POSIX processes and threads, recursive search, data structures, and input handling. These programs build independently through one CMake project.
+
+An additional [historical collection](historical/README.md) contains 17 recovered C and C++ exercises from 2021–2023, with original implementations and documented limitations. They build separately from the reviewed CMake targets. Python algorithms and automata are organized in [algorithms-and-data-structures](https://github.com/legooz/algorithms-and-data-structures); the [engineering portfolio](https://github.com/legooz/engineering-portfolio) connects the categories.
 
 The 2026 review corrected algorithm and memory-safety defects, extracted C++ from eight notebooks, and added repeatable tests and CI. These are educational exercises, with course scaffolding where applicable. The review and test infrastructure were developed with AI assistance; this repository does not present the refreshed code as untouched historical submissions. Recovered assignment handouts also informed the corrections; see [the assignment audit](docs/ASSIGNMENT_AUDIT.md), [review record](docs/REVIEW.md), and [attribution](NOTICE.md).
 

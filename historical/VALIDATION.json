@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-12",
+  "environment": "Ubuntu / WSL, GCC and G++",
+  "scope": "Compile all 17 historical programs and bounded benign sample runs; not an exhaustive correctness or memory-safety test.",
+  "results": [
+    {
+      "program": "arithmetic",
+      "sources": [
+        "historical/c-2021/arithmetic.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "compiler_warning_count": 5
+    },
+    {
+      "program": "arrays",
+      "sources": [
+        "historical/c-2021/arrays.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "compiler_warning_count": 2
+    },
+    {
+      "program": "basic",
+      "sources": [
+        "historical/c-2021/basic.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "compiler_warning_count": 2
+    },
+    {
+      "program": "comparing_strings",
+      "sources": [
+        "historical/c-2021/comparing_strings.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "a\nb\n",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 2
+    },
+    {
+      "program": "conversion_from_binary",
+      "sources": [
+        "historical/c-2021/conversion_from_binary.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "1101\n",
+        "exit_code": 0,
+        "expected_substring": "13 in decimal",
+        "passed": true
+      },
+      "compiler_warning_count": 2
+    },
+    {
+      "program": "conversion_to_binary",
+      "sources": [
+        "historical/c-2021/conversion_to_binary.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "13\n",
+        "exit_code": 0,
+        "expected_substring": "1101",
+        "passed": true
+      },
+      "compiler_warning_count": 5
+    },
+    {
+      "program": "strings",
+      "sources": [
+        "historical/c-2021/strings.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "compiler_warning_count": 2
+    },
+    {
+      "program": "substring",
+      "sources": [
+        "historical/c-2021/substring.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "adam\nMadame Bovary\n",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 4
+    },
+    {
+      "program": "binary-range",
+      "sources": [
+        "historical/c-2022/binary-range/goozen_problem_2.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 0
+    },
+    {
+      "program": "math-library",
+      "sources": [
+        "historical/c-2022/math-library/main.c",
+        "historical/c-2022/math-library/userMathLib.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "-7\n81\n",
+        "exit_code": 0,
+        "expected_substring": "9.00",
+        "passed": true
+      },
+      "compiler_warning_count": 1
+    },
+    {
+      "program": "monty-hall",
+      "sources": [
+        "historical/c-2022/monty-hall/goozen_problem5.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 0
+    },
+    {
+      "program": "temperature-conversion",
+      "sources": [
+        "historical/c-2022/temperature-conversion/goozen_problem_3.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 0
+    },
+    {
+      "program": "temperature-equality",
+      "sources": [
+        "historical/c-2022/temperature-equality/goozen_problem4b.c"
+      ],
+      "compiler": "gcc",
+      "standard": "c11",
+      "compile_ok": true,
+      "sample": {
+        "input": "",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 0
+    },
+    {
+      "program": "checked-array",
+      "sources": [
+        "historical/cpp-2023/checked-array/main.cpp"
+      ],
+      "compiler": "g++",
+      "standard": "c++14",
+      "compile_ok": true,
+      "sample": {
+        "input": "",
+        "exit_code": 0,
+        "expected_substring": "25",
+        "passed": true
+      },
+      "compiler_warning_count": 2
+    },
+    {
+      "program": "coin-change",
+      "sources": [
+        "historical/cpp-2023/coin-change/main.cpp"
+      ],
+      "compiler": "g++",
+      "standard": "c++17",
+      "compile_ok": true,
+      "sample": {
+        "input": "",
+        "exit_code": 0,
+        "expected_substring": null,
+        "passed": true
+      },
+      "compiler_warning_count": 1
+    },
+    {
+      "program": "josephus",
+      "sources": [
+        "historical/cpp-2023/josephus/main.cpp",
+        "historical/cpp-2023/josephus/Prisoner.cpp"
+      ],
+      "compiler": "g++",
+      "standard": "c++17",
+      "compile_ok": true,
+      "sample": {
+        "input": "5\n2\n",
+        "exit_code": 0,
+        "expected_substring": "number 3",
+        "passed": true
+      },
+      "compiler_warning_count": 0
+    },
+    {
+      "program": "linked-list-lab",
+      "sources": [
+        "historical/cpp-2023/linked-list-lab/LinkedList.cpp",
+        "historical/cpp-2023/linked-list-lab/main.cpp",
+        "historical/cpp-2023/linked-list-lab/Node.cpp"
+      ],
+      "compiler": "g++",
+      "standard": "c++17",
+      "compile_ok": true,
+      "sample": {
+        "input": "N\n",
+        "exit_code": 0,
+        "expected_substring": "Floyd",
+        "passed": true
+      },
+      "compiler_warning_count": 0
+    }
+  ]
+}

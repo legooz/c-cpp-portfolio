@@ -331,5 +331,295 @@
       "published_sha256": "374cb2342cf8987dc73ae2b3cc0cb1d66853684ac638d25087ae5287ddf5c04d"
     }
   ],
-  "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based."
+  "hash_notes": "source_file_sha256 hashes archive file bytes; extracted_text_sha256 hashes the original extracted UTF-8 text with LF newlines; published_sha256 hashes this release file. Notebook cell indices are zero-based.",
+  "historical_recovery": {
+    "date": "2026-10-12",
+    "policy": "Original source preserved except identifier redaction/encoding. Historical programs are separate from curated targets.",
+    "files": [
+      {
+        "source_file": "arithmetic.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "897458bf957305f24e8cc7270c5f41b0af89412291d29179255ac827d4de97a9",
+        "destination": "historical/c-2021/arithmetic.c",
+        "published_sha256": "f30acecefdfb1ece9df248157d0c403492bcd4c2c5ca768c071552bbc3006c89",
+        "topic": "arithmetic",
+        "transformations": [
+          "Removed student identifier and/or normalized text encoding."
+        ],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "arrays.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "b9c011aeefd9a73b213958c8417c94d6d5aaffb612dbda6f468925f541c2322e",
+        "destination": "historical/c-2021/arrays.c",
+        "published_sha256": "b9c011aeefd9a73b213958c8417c94d6d5aaffb612dbda6f468925f541c2322e",
+        "topic": "arrays",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "basic.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "59a84b91f1ffb6a3d758d441d31eb582c37195ed0bdb16b19c65ff152c815f45",
+        "destination": "historical/c-2021/basic.c",
+        "published_sha256": "59a84b91f1ffb6a3d758d441d31eb582c37195ed0bdb16b19c65ff152c815f45",
+        "topic": "basic",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "comparing_strings.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "07553c724bfa4f1db38ccba05a997213051c58b3b3d318917653fcfcef5d2054",
+        "destination": "historical/c-2021/comparing_strings.c",
+        "published_sha256": "07553c724bfa4f1db38ccba05a997213051c58b3b3d318917653fcfcef5d2054",
+        "topic": "comparing strings",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "conversion_from_binary.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "1084fddebf8138fb491782405f3124ed507b19fe0fd3e0e1714dc5d2639aa95a",
+        "destination": "historical/c-2021/conversion_from_binary.c",
+        "published_sha256": "1084fddebf8138fb491782405f3124ed507b19fe0fd3e0e1714dc5d2639aa95a",
+        "topic": "conversion from binary",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "conversion_to_binary.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "992231e7748278814ae131f768257f43a6b7e1199553d4a55bd8be4b689c46eb",
+        "destination": "historical/c-2021/conversion_to_binary.c",
+        "published_sha256": "992231e7748278814ae131f768257f43a6b7e1199553d4a55bd8be4b689c46eb",
+        "topic": "conversion to binary",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "strings.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "2ee8942f179802e49a33a375b9388aaa0d1c409924ca03c9cb43912e820a4a38",
+        "destination": "historical/c-2021/strings.c",
+        "published_sha256": "2ee8942f179802e49a33a375b9388aaa0d1c409924ca03c9cb43912e820a4a38",
+        "topic": "strings",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "substring.c",
+        "course": "CSCE A201, Fall 2021",
+        "source_sha256": "95f475c824165a8cbf46e2806891f326b6bd27c809522e29671d287898efcde9",
+        "destination": "historical/c-2021/substring.c",
+        "published_sha256": "95f475c824165a8cbf46e2806891f326b6bd27c809522e29671d287898efcde9",
+        "topic": "substring",
+        "transformations": [],
+        "notes": "Student submission based on course scaffolding. basic.c explicitly credits Chr. Lauter and Lars Goozen; retain University of Alaska Anchorage copyright. Known defects are listed in historical/README.md."
+      },
+      {
+        "source_file": "main.c",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "2df89be3ac5137cfae47cf6a16dda01adb79a27f79a1284ae7391ee68d90d24d",
+        "destination": "historical/c-2022/math-library/main.c",
+        "published_sha256": "2df89be3ac5137cfae47cf6a16dda01adb79a27f79a1284ae7391ee68d90d24d",
+        "topic": "multi-file math library",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "userMathLib.c",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "2bb7ecc4b445ba2f11269fc11780cbd76a772848103e4f14b60b735cb149ac2b",
+        "destination": "historical/c-2022/math-library/userMathLib.c",
+        "published_sha256": "2bb7ecc4b445ba2f11269fc11780cbd76a772848103e4f14b60b735cb149ac2b",
+        "topic": "multi-file math library",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "userMathLib.h",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "761827c25b9d640012f13a74aa22433049bccc2d3b4f45582d01497210a14a2b",
+        "destination": "historical/c-2022/math-library/userMathLib.h",
+        "published_sha256": "761827c25b9d640012f13a74aa22433049bccc2d3b4f45582d01497210a14a2b",
+        "topic": "multi-file math library",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "goozen_problem_2.c",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "6e73162af8eb43e28d7408f7f0540e724558c89f76e5c6109de4f873796f4a53",
+        "destination": "historical/c-2022/binary-range/goozen_problem_2.c",
+        "published_sha256": "6e73162af8eb43e28d7408f7f0540e724558c89f76e5c6109de4f873796f4a53",
+        "topic": "binary table",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "goozen_problem_3.c",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "a4831bf2da4197db778cea9bdaacadb820207fff5f18fd143dd242fef8b19ac2",
+        "destination": "historical/c-2022/temperature-conversion/goozen_problem_3.c",
+        "published_sha256": "a4831bf2da4197db778cea9bdaacadb820207fff5f18fd143dd242fef8b19ac2",
+        "topic": "temperature conversion",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "goozen_problem4b.c",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "571490076a825f9344fac19729c936739cf28169b02728dff660a2572e4ff121",
+        "destination": "historical/c-2022/temperature-equality/goozen_problem4b.c",
+        "published_sha256": "571490076a825f9344fac19729c936739cf28169b02728dff660a2572e4ff121",
+        "topic": "temperature equality search",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "goozen_problem5.c",
+        "course": "CSCE A201, Fall 2022",
+        "source_sha256": "28fcdfa2383c5f1ac62425bd53660e8e05d45bc4460676a16569b8b1840e6370",
+        "destination": "historical/c-2022/monty-hall/goozen_problem5.c",
+        "published_sha256": "28fcdfa2383c5f1ac62425bd53660e8e05d45bc4460676a16569b8b1840e6370",
+        "topic": "Monty Hall simulation",
+        "transformations": [],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "goozen_problem4.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "42baf0633df8f7ee8c0a81fad4b1d3e06d1e99d8816d6a1ff9f47b0951637961",
+        "destination": "historical/cpp-2023/coin-change/main.cpp",
+        "published_sha256": "47b7c33c5199989d0f0e24026aa73340c47dffe5c020dfefa470ff00975d3952",
+        "topic": "coin change via reference parameters",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "LinkedList.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "c425798e005ecfc2b7c4a87f83bcdb16cfbce554be24fce4d4f2304733c50618",
+        "destination": "historical/cpp-2023/linked-list-lab/LinkedList.cpp",
+        "published_sha256": "46385074f6f61a84ea56af1baea78a9413abf9b8e42af9cc0716d9da1f55a243",
+        "topic": "linked list editing and removal",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "LinkedList.h",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "2130b2b9a46d38e26ceef8d543f4ab08aa32b10b60cf9fc190f42e3fe4a1cda6",
+        "destination": "historical/cpp-2023/linked-list-lab/LinkedList.h",
+        "published_sha256": "9d26a4f2d74a575fe1f8aefa43088195708881950298649c5677afc1e75207d4",
+        "topic": "linked list editing and removal",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "main.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "6f26e94c6237e2abdccbedf797426b4e70c6c6a9c264282fef6879f75e931d0f",
+        "destination": "historical/cpp-2023/linked-list-lab/main.cpp",
+        "published_sha256": "6a4dd3b19e1670b270ee3e5293590aa9c3c0c5dd86f90ee756513f106c3e34e4",
+        "topic": "linked list editing and removal",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "Node.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "0b987061bef00f7e767b366fa840da8b91243248bda968a3896047d22b3ecab2",
+        "destination": "historical/cpp-2023/linked-list-lab/Node.cpp",
+        "published_sha256": "733eb1def90cddb2f384184608c7baf3f387c789517ad5deb354d9b1ecba467c",
+        "topic": "linked list editing and removal",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "Node.h",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "396833aea9eed2c54b1ebaf744904821b87b0c0cf5d0f25c438ce7834ee370e6",
+        "destination": "historical/cpp-2023/linked-list-lab/Node.h",
+        "published_sha256": "d602fa1efe5f59a1df3c68bee4578a33a196f5d8b3795ef4e9ff6458549359e3",
+        "topic": "linked list editing and removal",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "main.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "fb41c9946b6aebcd30b7f4b8c024eb2edc90d5e64e9f1b8066a59523ed485a53",
+        "destination": "historical/cpp-2023/josephus/main.cpp",
+        "published_sha256": "5a5be4cb2d968fd80568d2d32ab540273600077bb7abc605b8646a9a6205c6a0",
+        "topic": "Josephus circular linked list",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "Prisoner.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "7a7b3088cb4c299d8b6f66aa29dfe8eab9ff56ba509be2338994551a8e5f44e1",
+        "destination": "historical/cpp-2023/josephus/Prisoner.cpp",
+        "published_sha256": "f4561694e86ef5720ccd5a08501a8af60a39da557e628e4f695f0227cdaee16e",
+        "topic": "Josephus circular linked list",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "Prisoner.h",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "dc6aa0d97047fc585266f7cbda1ccce9fe2599a9b6ca76d36fdd724604e73d9b",
+        "destination": "historical/cpp-2023/josephus/Prisoner.h",
+        "published_sha256": "62f8c136e13c134eb911a4025836fea1075b562214e9ff3ca7eb77358fc86561",
+        "topic": "Josephus circular linked list",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "CheckedArray.h",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "f903cb1860052683315ddc1a5a77c978c67e2e33181d9545e8061bb41cbfdc1a",
+        "destination": "historical/cpp-2023/checked-array/CheckedArray.h",
+        "published_sha256": "b2647f31e85c67a2de5f901593deb28d5ca404bc9873e83dff212f46c5f715a6",
+        "topic": "templates and bounds exceptions",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      },
+      {
+        "source_file": "main.cpp",
+        "course": "CSCE A211, Spring 2023",
+        "source_sha256": "2b2d7074577d518e509f5cb585396e72d4ae39c6ca098c13c81e46c2af5fee9f",
+        "destination": "historical/cpp-2023/checked-array/main.cpp",
+        "published_sha256": "d2d91b770c6f1fbab5e0c165d7b86d4ce7c29aa7485e6f00f1fb34fdbbbdfd8e",
+        "topic": "templates and bounds exceptions",
+        "transformations": [
+          "Normalized CRLF line endings to LF for Git portability."
+        ],
+        "notes": "Historical student coursework; existing comments and course scaffolding retained."
+      }
+    ]
+  }
 }
